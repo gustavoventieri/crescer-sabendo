@@ -8,10 +8,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
         @vite('resources/css/app.css')
-    </head>
-    <body class="bg-gray-200 ">
 
-        @include("components.header")
+    </head>
+    <body class="bg-white overflow-x-hidden ">
+
+        @include("components.purple.header")
         @yield('content')
+        @include("components.purple.contactus")
+        @include("components.purple.footer")
     </body>
 </html>

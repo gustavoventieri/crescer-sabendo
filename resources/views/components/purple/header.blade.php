@@ -2,16 +2,16 @@
     <div class="flex items-center justify-between ">
         <!-- Logo -->
         <div id="logo" class="flex items-center border bg-customPurple rounded-br-only">
-            <img src="{{ asset('images/logo-removebg-preview.png') }}" alt="Logo" class=" pl-5 pb-2 pr-7 pt-1">
+            <img src="{{ asset('images/logo.png') }}" alt="Logo" class=" pl-5 pb-2 pr-7 pt-1">
         </div>
 
         <!-- Navigation Links -->
         <nav id="navbar" class="hidden  md:flex items-center space-x-12 gap-14">
-            <a href="#" class="text-purple-700 text-3xl font-itim hover:text-purple-900">Home</a>
-            <a href="#" class="text-customBlue text-3xl font-itim hover:text-purple-900">Sobre nós</a>
-            <a href="#" class="text-customBlue text-3xl font-itim hover:text-purple-900">Doações</a>
-            <a href="#" class="text-customBlue text-3xl font-itim hover:text-purple-900">Parcerias</a>
-            <a href="#" class="text-customBlue text-3xl font-itim hover:text-purple-900">Voluntários</a>
+            <a href="{{ url('/') }}" class="text-purple-700 text-3xl font-itim hover:text-purple-900">Home</a>
+            <a href="{{ url('/') }}" class="text-customBlue text-3xl font-itim hover:text-purple-900">Sobre nós</a>
+            <a href="{{ url('/') }}" class="text-customBlue text-3xl font-itim hover:text-purple-900">Parcerias</a>
+            <a href="{{ url('/donates')}}" class="text-customBlue text-3xl font-itim hover:text-purple-900">Doações</a>
+            <a href="{{ url('/donates')}}" class="text-customBlue text-3xl font-itim hover:text-purple-900">Voluntários</a>
         </nav>
 
         <!-- Mobile Navigation Toggle -->
@@ -25,7 +25,7 @@
         <!-- User Actions -->
         <div id="userAction" class="hidden md:flex items-center space-x-2 mr-6 ">
             <a href="#" class="text-gray-600 hover:text-purple-900">
-                <img class="h-12" src="{{ asset('images/userIcon2.png') }}" alt="">
+                <img class="h-12" src="{{ asset('images/userIconPurple.png') }}" alt="">
             </a>
             <a id="button" href="#" class="bg-customPurple font-itim text-2xl text-white px-5 py-3 rounded-full hover:bg-purple-900">Sign up</a>
         </div>
@@ -35,8 +35,8 @@
     <div id="mobile-menu" class="md:hidden bg-white py-2 px-4 ">
         <a href="#" class="block text-purple-700 text-lg font-itim py-2 hover:text-purple-900">Home</a>
         <a href="#" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">Sobre nós</a>
-        <a href="#" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">Doações</a>
         <a href="#" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">Parcerias</a>
+        <a href="#" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">Doações</a>
         <a href="#" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">Voluntários</a>
         <a href="#" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">Entrar</a>
         <a href="#" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">Registrar-se</a>

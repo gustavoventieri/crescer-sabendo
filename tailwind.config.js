@@ -10,6 +10,8 @@ export default {
             colors: {
                 customPurple: "#999AE4",
                 customBlue: "#92BAE1",
+                customGreen: "#6CDD7E",
+                customDarkBlue: "#5656BF",
             },
             borderRadius: {
                 "br-only": "0 0 0.5rem 0", // Defina o valor conforme necessário
