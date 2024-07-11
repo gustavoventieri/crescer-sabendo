@@ -3,7 +3,7 @@
         <div class="mb-10 mt-10">
             <img class="w-96" src="{{ asset('images/tag.png') }}" alt="">
         </div>
-        <div class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:gap-52  rounded-lg h-5/6 w-9/12 ">
+        <div class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:gap-40  rounded-lg h-5/6 w-9/12 ">
 
             <div class="md:ml-24 flex flex-col space-y-6 flex-grow">
             <form action="">

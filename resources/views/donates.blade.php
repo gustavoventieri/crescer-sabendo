@@ -1,5 +1,5 @@
 @section('titulo', "Donates Page")
-@extends('layouts.greenLayout')
+@extends('layouts.donatesLayout')
 
 @section('content')
 

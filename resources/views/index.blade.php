@@ -1,5 +1,5 @@
 @section('titulo', "Home Page")
-@extends('layouts.purpleLayout')
+@extends('layouts.indexLayout')
 
 @section('content')
 

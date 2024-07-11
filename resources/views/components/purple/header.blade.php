@@ -8,15 +8,14 @@
         <!-- Navigation Links -->
         <nav id="navbar" class="hidden  md:flex items-center space-x-12 gap-14">
             <a href="{{ url('/') }}" class="text-purple-700 text-3xl font-itim hover:text-purple-900">Home</a>
-            <a href="{{ url('/') }}" class="text-customBlue text-3xl font-itim hover:text-purple-900">Sobre nós</a>
+            <a href="#aboutus" class="text-customBlue text-3xl font-itim hover:text-purple-900">Sobre nós</a>
             <a href="{{ url('/') }}" class="text-customBlue text-3xl font-itim hover:text-purple-900">Parcerias</a>
             <a href="{{ url('/donates')}}" class="text-customBlue text-3xl font-itim hover:text-purple-900">Doações</a>
             <a href="{{ url('/donates')}}" class="text-customBlue text-3xl font-itim hover:text-purple-900">Voluntários</a>
         </nav>
 
-        <!-- Mobile Navigation Toggle -->
-        <div id="mobile-nav" class="md:hidden mr-5 ">
-
+         <!-- Mobile Navigation Toggle -->
+         <div id="mobile-nav" class="md:hidden mr-5 ">
             <button id="mobile-menu-toggle" class="focus:outline-none">
                 <img class="h-10" src="{{ asset('images/task.png') }}" alt="">
             </button>
@@ -33,20 +32,20 @@
 
     <!-- Mobile Menu (hidden by default) -->
     <div id="mobile-menu" class="md:hidden bg-white py-2 px-4 ">
-        <a href="#" class="block text-purple-700 text-lg font-itim py-2 hover:text-purple-900">Home</a>
-        <a href="#" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">Sobre nós</a>
-        <a href="#" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">Parcerias</a>
-        <a href="#" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">Doações</a>
-        <a href="#" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">Voluntários</a>
-        <a href="#" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">Entrar</a>
-        <a href="#" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">Registrar-se</a>
+        <a href="{{ url('/') }}" class="text-purple-700 text-lg font-itim py-2 hover:text-purple-900">Home</a>
+        <a href="#aboutus" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">Sobre nós</a>
+        <a href="{{ url('/') }}" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">Parcerias</a>
+        <a href="{{ url('/donates')}}" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">Doações</a>
+        <a href="{{ url('/donates')}}" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">Voluntários</a>
+        <a href="#" class="block  text-customBlue text-lg font-itim py-2 hover:text-purple-900">Entrar</a>
+        <a href="#" class="block  text-customBlue text-lg font-itim py-2 hover:text-purple-900">Registrar-se</a>
     </div>
 </header>
-
+<div class="bg-gray-200 w-full h-20 mb-10"></div>
 <script>
     // Script to toggle mobile menu visibility
     document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
-        document.getElementById('mobile-menu').classList.toggle('hidden');
+        document.getElementById('mobile-menu').classList.toggle('md:hidden');
     });
 
     function adjustNavStyles() {
@@ -54,13 +53,12 @@
         const nav = document.querySelectorAll('#navbar');
         const navLinks = document.querySelectorAll('#navbar a');
         const userActions = document.querySelectorAll('#userAction a img');
-        const mobileNav = document.querySelectorAll('#mobile-nav');
-        const mobileMenu = document.querySelectorAll('#mobile-menu a');
+
         const button = document.querySelectorAll('#button');
 
         const screenWidth = window.innerWidth;
 
-        if (screenWidth > 767 && screenWidth <= 1351) {
+        if (screenWidth > 767 && screenWidth <= 1470) {
             logo.forEach(link => {
                 link.classList.remove('pl-5', 'pr-7', 'pb-2', 'pt-1');
                 link.classList.add('pl-1', 'pr-5', 'pb-3', 'pt-2', 'h-12');

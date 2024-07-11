@@ -8,7 +8,7 @@
         <!-- Navigation Links -->
         <nav id="navbar" class="hidden  md:flex items-center space-x-12 gap-14">
             <a href="{{ url('/') }}" class="text-customBlue  text-3xl font-itim hover:text-green-600">Home</a>
-            <a href="{{ url('/') }}" class="text-customBlue text-3xl font-itim hover:text-green-600">Sobre nós</a>
+            <a href="{{ url('/') }}#aboutus" class="text-customBlue text-3xl font-itim hover:text-green-600">Sobre nós</a>
             <a href="{{ url('/') }}" class="text-customBlue text-3xl font-itim hover:text-green-600">Parcerias</a>
             <a href="{{ url('/donates')}}" class="text-customBlue text-3xl font-itim hover:text-green-600">Doações</a>
             <a href="{{ url('/donates')}}" class="text-customGreen text-3xl font-itim hover:text-green-600">Voluntários</a>
@@ -60,7 +60,7 @@
 
         const screenWidth = window.innerWidth;
 
-        if (screenWidth > 767 && screenWidth <= 1351) {
+        if (screenWidth > 767 && screenWidth <= 1470) {
             logo.forEach(link => {
                 link.classList.remove('pl-5', 'pr-7', 'pb-2', 'pt-1');
                 link.classList.add('pl-1', 'pr-5', 'pb-3', 'pt-2', 'h-12');

@@ -11,10 +11,12 @@
 
     </head>
     <body class="bg-white overflow-x-hidden ">
-
         @include("components.purple.header")
-        @yield('content')
+        @include('components.purple.iconCards')
+        @include('components.purple.aboutus')
         @include("components.purple.contactus")
         @include("components.purple.footer")
+
     </body>
 </html>
+
