@@ -26,11 +26,24 @@
     }
 
     .p-h {
-        padding: 0.7rem;
+        padding: 0.5rem;
     }
 
     .w-dados {
         width: 22rem;
+    }
+
+    /* index(content) */
+    .right-100 {
+        right: 26rem;
+    }
+
+    .right-101 {
+        right: 27rem;
+    }
+
+    .right-102 {
+        right: 28rem;
     }
 }
 

@@ -10,8 +10,10 @@ function adjustStyles() {
     const textP = document.querySelectorAll("#textP");
     const textH1 = document.querySelectorAll("#textH1");
     const dadosContainer = document.querySelectorAll("#dadosContainer");
+    const childImage = document.querySelectorAll("#childrenImage");
+    const overlay = document.querySelectorAll("#overlay");
 
-    const quebraCabeca = document.querySelectorAll("#quebraCabeca");
+    const divContent = document.querySelectorAll("#divContent");
     const quebraCabecaImage = document.querySelectorAll("#quebraCabecaImage");
     const abc = document.querySelectorAll("#abc");
     const abcImage = document.querySelectorAll("#abcImage");
@@ -44,7 +46,7 @@ function adjustStyles() {
             props.classList.remove("gap-14");
         });
         navLinks.forEach((props) => {
-            props.classList.remove("text-3xl");
+            props.classList.remove("text-2xl");
             props.classList.add("text-lg");
         });
         userActions.forEach((link) => {
@@ -52,7 +54,7 @@ function adjustStyles() {
             link.classList.add("h-10");
         });
         button.forEach((props) => {
-            props.classList.remove("text-xl", "px-5", "py-3");
+            props.classList.remove("text-xl", "px-4", "py-2");
             props.classList.add("text-base", "p-h");
         });
     } else {
@@ -65,7 +67,7 @@ function adjustStyles() {
         });
         navLinks.forEach((props) => {
             props.classList.remove("text-lg");
-            props.classList.add("text-3xl");
+            props.classList.add("text-2xl");
         });
         userActions.forEach((link) => {
             link.classList.remove("h-10");
@@ -73,7 +75,7 @@ function adjustStyles() {
         });
         button.forEach((props) => {
             props.classList.remove("text-base", "p-h");
-            props.classList.add("text-xl", "px-5", "py-3");
+            props.classList.add("text-xl", "px-4", "py-2");
         });
     }
 
@@ -144,23 +146,8 @@ function adjustStyles() {
         });
     }
 
-    // Index(dados) - Purple
+    // Index - Purple
 
-    if (screenWidth < 767) {
-        quebraCabecaImage.forEach((props) => {
-            props.classList.add("hidden");
-        });
-        abcImage.forEach((props) => {
-            props.classList.add("hidden");
-        });
-    } else {
-        quebraCabecaImage.forEach((props) => {
-            props.classList.remove("hidden");
-        });
-        abcImage.forEach((props) => {
-            props.classList.remove("hidden");
-        });
-    }
     if (screenWidth <= 1100) {
         quebraCabecaImage.forEach((props) => {
             props.classList.remove("h-64");
@@ -178,6 +165,55 @@ function adjustStyles() {
         abcImage.forEach((props) => {
             props.classList.remove("h-44");
             props.classList.add("h-48");
+        });
+    }
+
+    if (screenWidth < 1260) {
+        childImage.forEach((props) => {
+            props.classList.remove("right-32");
+            props.classList.add("right-10");
+        });
+        overlay.forEach((props) => {
+            props.classList.remove("md:left-36");
+            props.classList.add("md:left-24");
+        });
+    } else {
+        childImage.forEach((props) => {
+            props.classList.remove("right-10");
+            props.classList.add("right-32");
+        });
+        overlay.forEach((props) => {
+            props.classList.remove("md:left-24");
+            props.classList.add("md:left-36");
+        });
+    }
+    if (screenWidth < 1200) {
+        childImage.forEach((props) => {
+            props.classList.remove("md:flex");
+            props.classList.add("hidden");
+        });
+        overlay.forEach((props) => {
+            props.classList.remove("md:left-36", "md:top-32");
+            props.classList.add(
+                "inset-x-0",
+                "top-1/2",
+                "transform",
+                "-translate-y-1/2"
+            );
+        });
+    } else {
+        childImage.forEach((props) => {
+            props.classList.remove("hidden");
+            props.classList.add("md:flex");
+        });
+        overlay.forEach((props) => {
+            props.classList.remove(
+                "inset-x-0",
+                "top-1/2",
+                "transform",
+                "-translate-y-1/2"
+            );
+            props.classList.add("md:left-36", "md:top-32");
         });
     }
 }

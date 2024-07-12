@@ -6,15 +6,40 @@
 @extends('layouts.indexLayout')
 
 @section('content')
+<div class="relative w-screen h-100 mb-4 md:mb-10 -z-40">
+    <div class="absolute inset-0 bg-gray-100"></div>
+    <!-- Image -->
+    <img src="{{ asset('images/backContent.png') }}" alt="" class="absolute inset-0 w-full h-full object-cover">
+
+    <!-- Overlay Div -->
+    <div id="overlay" class="mr-3 md:m-0 absolute md:left-36 top-32 md:top-32 flex items-center justify-center p-4">
+        <div  id="divContent" class="bg-white  rounded-3xl shadow-2xl p-14 max-w-lg text-center">
+            <h1 class="text-purple-700 text-3xl font-itim mb-4">Onde os sonhos ganham vida!</h1>
+            <p class="text-gray-700 text-xl font-itim">Oferecemos atividades extracurriculares para desenvolver a criatividade e a coordenação motora dos pequenos.</p>
+        </div>
+    </div>
+
+    <!-- Additional Elements -->
+    <div id= "childrenImage" class="hidden md:flex absolute right-32 bottom-12">
+        <img src="{{ asset('images/children.png') }}" alt="" class="w-auto h-auto">
+    </div>
+
+
+</div>
+
+
+
+
+
 @endsection
 
 @section('dados')
 <div id="dadosContainer" class="relative p-8 bg-white shadow-2xl rounded-lg mx-auto mt-20 mb-20  w-container h-100">
     <div id="quebracabeca"  class="absolute -z-50 top-10 left-0 transform -translate-x-44 -translate-y-2">
-        <img id="quebraCabecaImage" class="h-64" src="{{ asset('images/quebra-cabeca.png') }}" alt="">
+        <img id="quebraCabecaImage" class="hidden md:block h-64" src="{{ asset('images/quebra-cabeca.png') }}" alt="">
     </div>
-    <div id="abc" class="absolute   z-50 bottom-0 right-0 transform translate-x-24 translate-y-10">
-        <img  id="abcImage" class="h-48" src="{{ asset('images/ABC.png') }}" alt="">
+    <div id="abc" class="  absolute   z-50 bottom-0 right-0 transform translate-x-24 translate-y-10">
+        <img  id="abcImage" class="hidden md:block h-48" src="{{ asset('images/ABC.png') }}" alt="">
     </div>
     <div class="mt-36 grid grid-cols-3 gap-16 place-items-center">
       <div class="text-center">
