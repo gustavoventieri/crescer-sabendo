@@ -1,9 +1,9 @@
 
 
 <div class="flex justify-center items-center ">
-        <div class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:gap-52 p-8  rounded-lg h-5/6 w-9/12 ">
+        <div class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:gap-20  rounded-lg h-5/6 w-9/12 ">
 
-            <div class="md:ml-24 flex flex-col space-y-6 flex-grow">
+            <div class=" flex flex-col space-y-6 flex-grow">
             <form action="">
                 <label class="block">
                     <span class="block text-sm font-medium text-gray-700">Nome</span>
@@ -24,7 +24,7 @@
                 <button class="bg-customGreen text-white font-itim rounded-full px-6 py-3 mt-4 self-start hover:bg-green-600">Enviar</button>
                 </div>
 
-                <!-- Contact Information Section -->
+
                 <div class="flex flex-col flex-grow">
                     <h2 class="text-xl font-itim text-green-500">Entre em contato</h2>
                     <p>(xx) xxxxx-xxxxx</p>
@@ -39,3 +39,4 @@
         </div>
     </div>
 </div>
+
