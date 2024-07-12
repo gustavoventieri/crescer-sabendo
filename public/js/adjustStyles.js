@@ -49,7 +49,7 @@ function adjustStyles() {
         });
         userActions.forEach((link) => {
             link.classList.remove("h-12");
-            link.classList.add("h-8");
+            link.classList.add("h-10");
         });
         button.forEach((props) => {
             props.classList.remove("text-xl", "px-5", "py-3");
@@ -68,7 +68,7 @@ function adjustStyles() {
             props.classList.add("text-3xl");
         });
         userActions.forEach((link) => {
-            link.classList.remove("h-8");
+            link.classList.remove("h-10");
             link.classList.add("h-12");
         });
         button.forEach((props) => {
