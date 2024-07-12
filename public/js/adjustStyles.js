@@ -170,25 +170,6 @@ function adjustStyles() {
 
     if (screenWidth < 1260) {
         childImage.forEach((props) => {
-            props.classList.remove("right-32");
-            props.classList.add("right-10");
-        });
-        overlay.forEach((props) => {
-            props.classList.remove("md:left-36");
-            props.classList.add("md:left-24");
-        });
-    } else {
-        childImage.forEach((props) => {
-            props.classList.remove("right-10");
-            props.classList.add("right-32");
-        });
-        overlay.forEach((props) => {
-            props.classList.remove("md:left-24");
-            props.classList.add("md:left-36");
-        });
-    }
-    if (screenWidth < 1200) {
-        childImage.forEach((props) => {
             props.classList.remove("md:flex");
             props.classList.add("hidden");
         });

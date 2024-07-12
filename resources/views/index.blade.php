@@ -1,7 +1,26 @@
 
 
 <script src=" {{ asset('js/adjustStyles.js') }} "></script>
+<script>
+    function adjustOverlay() {
+        const screenWidth = window.innerWidth;
+        const overlay = document.getElementById('overlay');
+        const divContent = document.getElementById('divContent');
 
+        if (screenWidth < 1260) {
+            overlay.classList.remove('md:left-36', 'md:top-32');
+            overlay.classList.add('inset-x-0', 'top-1/2', 'transform', '-translate-y-1/2');
+            divContent.classList.remove('md:max-w-lg');
+        } else {
+            overlay.classList.remove('inset-x-0', 'top-1/2', 'transform', '-translate-y-1/2');
+            overlay.classList.add('md:left-36', 'md:top-32');
+            divContent.classList.add('md:max-w-lg');
+        }
+    }
+
+    window.addEventListener('resize', adjustOverlay);
+    document.addEventListener('DOMContentLoaded', adjustOverlay);
+</script>
 @section('titulo', "Home Page")
 @extends('layouts.indexLayout')
 
