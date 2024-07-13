@@ -12,11 +12,8 @@ function adjustStyles() {
     const textH1 = document.querySelectorAll("#textH1");
     const dadosContainer = document.querySelectorAll("#dadosContainer");
     const childImage = document.querySelectorAll("#childrenImage");
-    const overlay = document.querySelectorAll("#overlay");
 
-    const divContent = document.querySelectorAll("#divContent");
     const quebraCabecaImage = document.querySelectorAll("#quebraCabecaImage");
-    const abc = document.querySelectorAll("#abc");
     const abcImage = document.querySelectorAll("#abcImage");
 
     const screenWidth = window.innerWidth;
@@ -99,7 +96,7 @@ function adjustStyles() {
     if (screenWidth > 767 && screenWidth <= 1340) {
         textContainer.forEach((props) => {
             props.classList.remove("md:pt-52", "md:ml-28", "md:text-2xl");
-            props.classList.add("md:pt-10", "md:ml-10", "md:text-");
+            props.classList.add("md:ml-10", "md:text-lg");
         });
         textP.forEach((props) => {
             props.classList.remove("md:text-2xl");
@@ -176,31 +173,13 @@ function adjustStyles() {
             props.classList.remove("md:flex");
             props.classList.add("hidden");
         });
-        overlay.forEach((props) => {
-            props.classList.remove("md:left-36", "md:top-32");
-            props.classList.add(
-                "inset-x-0",
-                "top-1/2",
-                "transform",
-                "-translate-y-1/2"
-            );
-        });
     } else {
         childImage.forEach((props) => {
             props.classList.remove("hidden");
             props.classList.add("md:flex");
         });
-        overlay.forEach((props) => {
-            props.classList.remove(
-                "inset-x-0",
-                "top-1/2",
-                "transform",
-                "-translate-y-1/2"
-            );
-            props.classList.add("md:left-36", "md:top-32");
-        });
     }
 }
 
-adjustStyles();
+document.addEventListener("DOMContentLoaded", adjustStyles);
 window.addEventListener("resize", adjustStyles);

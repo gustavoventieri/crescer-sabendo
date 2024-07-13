@@ -10,13 +10,7 @@
         <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
         @vite('resources/css/app.css')
 
-        <style>
-            @layer utilities {
-                .w-container{
-                    width: 66rem;
-                }
-            }
-        </style>
+
     </head>
     <body class="bg-white overflow-x-hidden">
 

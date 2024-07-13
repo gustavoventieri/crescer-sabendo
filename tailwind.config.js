@@ -14,7 +14,7 @@ export default {
                 customDarkBlue: "#5656BF",
             },
             borderRadius: {
-                "br-only": "0 0 0.5rem 0", // Defina o valor conforme necessário
+                "br-only": "0 0 0.21rem 0", // Defina o valor conforme necessário
             },
             fontFamily: {
                 itim: ["Itim", "cursive"],

@@ -14,18 +14,16 @@
 
          <div id="userAction" class="hidden md:flex items-center space-x-2 mr-3 ">
             <a href="#" class="text-gray-600 hover:text-purple-900 ">
-                <img id="userImg" class="h-12" src="{{ asset('images/icons/userIconPurple.png') }}" alt="">
+                <img id="userImg" class="h-10 mr-2" src="{{ asset('images/icons/userIconPurple.png') }}" alt="">
             </a>
-            <a id="button" href="#" class="bg-customPurple font-itim text-2xl text-white px-4 py-2 rounded-full hover:bg-purple-900">Sign up</a>
+            <a id="button" href="#" class="bg-customPurple ml-3 font-itim text-xl text-white px-3 py-1 rounded-full hover:bg-purple-900">Sign up</a>
         </div>
-
 
          <div id="mobile-nav" class="md:hidden mr-5 ">
             <button id="mobile-menu-toggle" class="focus:outline-none">
                 <img class="h-10" src="{{ asset('images/icons/taskPurple.png') }}" alt="">
             </button>
         </div>
-
 
     </div>
 

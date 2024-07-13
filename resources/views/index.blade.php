@@ -9,12 +9,11 @@
 
         if (screenWidth < 1260) {
             overlay.classList.remove('md:left-36', 'md:top-32');
-            overlay.classList.add('inset-x-0', 'top-1/2', 'transform', '-translate-y-1/2');
-            divContent.classList.remove('md:max-w-lg');
+            overlay.classList.add('inset-x-0', 'transform', 'mt-28');
         } else {
-            overlay.classList.remove('inset-x-0', 'top-1/2', 'transform', '-translate-y-1/2');
+            overlay.classList.remove('inset-x-0', 'transform','mt-28');
             overlay.classList.add('md:left-36', 'md:top-32');
-            divContent.classList.add('md:max-w-lg');
+
         }
     }
 
@@ -31,7 +30,7 @@
     <img src="{{ asset('images/backContent.png') }}" alt="" class="absolute inset-0 w-full h-full object-cover">
 
     <!-- Overlay Div -->
-    <div id="overlay" class="mr-3 md:m-0 absolute md:left-36 top-32 md:top-32 flex items-center justify-center p-4">
+    <div id="overlay" class="mr-3 absolute md:left-36 flex items-center justify-center p-4">
         <div  id="divContent" class="bg-white  rounded-3xl shadow-2xl p-14 max-w-lg text-center">
             <h1 class="text-purple-700 text-3xl font-itim mb-4">Onde os sonhos ganham vida!</h1>
             <p class="text-gray-700 text-xl font-itim">Oferecemos atividades extracurriculares para desenvolver a criatividade e a coordenação motora dos pequenos.</p>

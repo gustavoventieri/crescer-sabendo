@@ -1,5 +1,9 @@
 @layer utilities {
     /* Courses - Purple */
+    .w-container {
+        width: 66rem;
+    }
+
     .w-101 {
         width: 20rem;
     }
