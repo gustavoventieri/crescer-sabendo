@@ -1,5 +1,6 @@
 function adjustStyles() {
-    const logo = document.querySelectorAll("#logo img");
+    const logo = document.querySelectorAll("#logo");
+    const logoimg = document.querySelectorAll("#logo img");
     const nav = document.querySelectorAll("#navbar");
     const navLinks = document.querySelectorAll("#navbar a");
     const userActions = document.querySelectorAll("#userImg");
@@ -30,17 +31,15 @@ function adjustStyles() {
             props.classList.remove("hidden");
         });
     }
-    if (screenWidth > 767 && screenWidth <= 1470) {
-    } else {
-        userActions.forEach((link) => {
-            link.classList.remove("h-8");
-            link.classList.add("h-12");
-        });
-    }
+
     if (screenWidth > 767 && screenWidth <= 1470) {
         logo.forEach((props) => {
+            props.classList.remove("rounded-br-only");
+            props.classList.add("borderr-right-sm");
+        });
+        logoimg.forEach((props) => {
             props.classList.remove("pl-5", "pr-7", "pb-2", "pt-1");
-            props.classList.add("pl-1", "pr-5", "pb-3", "pt-2", "h-12");
+            props.classList.add("h-12");
         });
         nav.forEach((props) => {
             props.classList.remove("gap-14");
@@ -59,7 +58,11 @@ function adjustStyles() {
         });
     } else {
         logo.forEach((props) => {
-            props.classList.remove("pl-1", "pr-5", "pb-3", "pt-2", "h-12");
+            props.classList.remove("borderr-right-sm");
+            props.classList.add("rounded-br-only");
+        });
+        logoimg.forEach((props) => {
+            props.classList.remove("h-12");
             props.classList.add("pl-5", "pr-7", "pb-2", "pt-1");
         });
         nav.forEach((props) => {

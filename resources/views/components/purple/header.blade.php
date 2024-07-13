@@ -12,8 +12,8 @@
             <a href="{{ url('/donates')}}" class="text-customBlue text-2xl font-itim hover:text-purple-900 hover:underline hover:pb-3">Voluntários</a>
         </nav>
 
-         <div id="userAction" class="hidden md:flex items-center space-x-2 mr-5 ">
-            <a href="#" class="text-gray-600 hover:text-purple-900 mr-2">
+         <div id="userAction" class="hidden md:flex items-center space-x-2 mr-3 ">
+            <a href="#" class="text-gray-600 hover:text-purple-900 ">
                 <img id="userImg" class="h-12" src="{{ asset('images/icons/userIconPurple.png') }}" alt="">
             </a>
             <a id="button" href="#" class="bg-customPurple font-itim text-2xl text-white px-4 py-2 rounded-full hover:bg-purple-900">Sign up</a>

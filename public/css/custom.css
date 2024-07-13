@@ -45,6 +45,11 @@
     .right-102 {
         right: 28rem;
     }
+    .borderr-right-sm {
+        border-radius: 0 0 1rem 0;
+        padding: 0.2rem;
+        padding-left: -0.1rem;
+    }
 }
 
 .marquee {
