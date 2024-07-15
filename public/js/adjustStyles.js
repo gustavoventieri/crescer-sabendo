@@ -1,3 +1,21 @@
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".value-button").forEach((button) => {
+        button.addEventListener("click", function () {
+            const value = this.getAttribute("data-value");
+            document.getElementById(
+                "donation-amount"
+            ).innerText = `R$ ${value}`;
+        });
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    document
+        .getElementById("mobile-menu-toggle")
+        .addEventListener("click", function () {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+});
+
 function adjustStyles() {
     const logo = document.querySelectorAll("#logo");
     const logoimg = document.querySelectorAll("#logo img");
@@ -12,9 +30,9 @@ function adjustStyles() {
     const textH1 = document.querySelectorAll("#textH1");
     const dadosContainer = document.querySelectorAll("#dadosContainer");
     const childImage = document.querySelectorAll("#childrenImage");
-
     const quebraCabecaImage = document.querySelectorAll("#quebraCabecaImage");
     const abcImage = document.querySelectorAll("#abcImage");
+    const overlay = document.getElementById("overlay");
 
     const screenWidth = window.innerWidth;
 
@@ -178,6 +196,16 @@ function adjustStyles() {
             props.classList.remove("hidden");
             props.classList.add("md:flex");
         });
+    }
+
+    if (overlay) {
+        if (screenWidth < 1260) {
+            overlay.classList.remove("md:left-36", "md:top-32");
+            overlay.classList.add("inset-x-0", "transform", "mt-28");
+        } else {
+            overlay.classList.remove("inset-x-0", "transform", "mt-28");
+            overlay.classList.add("md:left-36", "md:top-32");
+        }
     }
 }
 
