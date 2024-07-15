@@ -8,3 +8,9 @@ Route::get('/', function () {
 Route::get('/donates', function () {
     return view('donates');
 });
+Route::get('/account', function () {
+    return view('account');
+});
+Route::get('/courses', function () {
+    return view('courses');
+});

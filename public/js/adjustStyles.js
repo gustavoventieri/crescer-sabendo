@@ -1,13 +1,108 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const inputOtherValue = document.querySelectorAll(
+        "#other-value-input-container"
+    );
+
+    // Impedir que o formulário seja enviado quando os botões de valor forem clicados
     document.querySelectorAll(".value-button").forEach((button) => {
-        button.addEventListener("click", function () {
+        button.addEventListener("click", function (event) {
+            event.preventDefault(); // Impede o comportamento padrão (envio do formulário)
+
             const value = this.getAttribute("data-value");
             document.getElementById(
                 "donation-amount"
             ).innerText = `R$ ${value}`;
         });
     });
+
+    document
+        .getElementById("other-value-btn")
+        .addEventListener("click", function () {
+            inputOtherValue.forEach((props) => {
+                props.classList.remove("hidden");
+            });
+        });
+
+    document
+        .getElementById("cancel-other-value-btn")
+        .addEventListener("click", function () {
+            document
+                .getElementById("other-value-input-container")
+                .classList.add("hidden");
+        });
+
+    document
+        .getElementById("confirm-other-value-btn")
+        .addEventListener("click", function () {
+            const otherValue =
+                document.getElementById("other-value-input").value;
+            if (otherValue) {
+                document.getElementById(
+                    "donation-amount"
+                ).innerText = `R$ ${otherValue}`;
+                document
+                    .getElementById("other-value-input-container")
+                    .classList.add("hidden");
+            }
+        });
+
+    function handlePaymentMethodSelection(paymentMethod) {
+        document.getElementById("pix").classList.add("hidden");
+        document.getElementById("boleto").classList.add("hidden");
+        document.getElementById("credito").classList.add("hidden");
+        document.getElementById("debito").classList.add("hidden");
+        document.getElementById("submit-donation").classList.add("hidden");
+        document.getElementById("pix-btn").classList.remove("hidden");
+        document.getElementById("debito-btn").classList.remove("hidden");
+        document.getElementById("boleto-btn").classList.remove("hidden");
+        document.getElementById("credito-btn").classList.remove("hidden");
+
+        // Mostrar os campos de pagamento específicos
+        if (paymentMethod === "Cartão de Débito") {
+            document.getElementById("debito").classList.remove("hidden");
+            document.getElementById("debito-btn").classList.add("hidden");
+            document
+                .getElementById("submit-donation")
+                .classList.remove("hidden");
+        } else if (paymentMethod === "Cartão de Crédito") {
+            document.getElementById("credito").classList.remove("hidden");
+            document.getElementById("credito-btn").classList.add("hidden");
+            document
+                .getElementById("submit-donation")
+                .classList.remove("hidden");
+        } else if (paymentMethod === "Boleto") {
+            document.getElementById("boleto").classList.remove("hidden");
+            document.getElementById("boleto-btn").classList.add("hidden");
+        } else if (paymentMethod === "Pix") {
+            document.getElementById("pix").classList.remove("hidden");
+            document.getElementById("pix-btn").classList.add("hidden");
+        }
+    }
+
+    document
+        .getElementById("debito-btn")
+        .addEventListener("click", function () {
+            handlePaymentMethodSelection("Cartão de Débito");
+        });
+
+    document
+        .getElementById("credito-btn")
+        .addEventListener("click", function () {
+            handlePaymentMethodSelection("Cartão de Crédito");
+        });
+
+    document
+        .getElementById("boleto-btn")
+        .addEventListener("click", function () {
+            handlePaymentMethodSelection("Boleto");
+        });
+
+    document.getElementById("pix-btn").addEventListener("click", function () {
+        handlePaymentMethodSelection("Pix");
+    });
+    // Enviar o formulário apenas quando o botão de doação for clicado
 });
+
 document.addEventListener("DOMContentLoaded", function () {
     document
         .getElementById("mobile-menu-toggle")
@@ -18,6 +113,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function adjustStyles() {
     const logo = document.querySelectorAll("#logo");
+    const plogo = document.querySelectorAll("#plogo");
+
     const logoimg = document.querySelectorAll("#logo img");
     const nav = document.querySelectorAll("#navbar");
     const navLinks = document.querySelectorAll("#navbar a");
@@ -32,11 +129,32 @@ function adjustStyles() {
     const childImage = document.querySelectorAll("#childrenImage");
     const quebraCabecaImage = document.querySelectorAll("#quebraCabecaImage");
     const abcImage = document.querySelectorAll("#abcImage");
-    const overlay = document.getElementById("overlay");
-
+    const overlay = document.querySelectorAll("#overlay");
+    const divContent = document.querySelectorAll("#divContent");
+    const home = document.querySelectorAll("#home");
     const screenWidth = window.innerWidth;
 
     // Headers
+    if (screenWidth <= 900 && screenWidth > 767) {
+        plogo.forEach((props) => {
+            props.classList.remove("text-5xl");
+            props.classList.add("text-3xl");
+            logo.forEach((props) => {
+                props.classList.remove("p-5");
+                props.classList.add("p-4");
+            });
+        });
+    } else {
+        plogo.forEach((props) => {
+            props.classList.remove("text-3xl");
+            props.classList.add("text-5xl");
+            logo.forEach((props) => {
+                props.classList.remove("p-4");
+                props.classList.add("p-5");
+            });
+        });
+    }
+
     if (screenWidth >= 767 && screenWidth <= 870) {
         button.forEach((props) => {
             props.classList.add("hidden");
@@ -198,14 +316,30 @@ function adjustStyles() {
         });
     }
 
-    if (overlay) {
-        if (screenWidth < 1260) {
-            overlay.classList.remove("md:left-36", "md:top-32");
-            overlay.classList.add("inset-x-0", "transform", "mt-28");
-        } else {
-            overlay.classList.remove("inset-x-0", "transform", "mt-28");
-            overlay.classList.add("md:left-36", "md:top-32");
-        }
+    if (screenWidth < 1260) {
+        overlay.forEach((props) => {
+            props.classList.remove("md:left-36", "md:top-32", "absolute");
+            props.classList.add("transform");
+        });
+        divContent.forEach((props) => {
+            props.classList.add("mt-20");
+        });
+        home.forEach((props) => {
+            props.classList.remove("h-100");
+            props.classList.add("h-101");
+        });
+    } else {
+        overlay.forEach((props) => {
+            props.classList.remove("transform");
+            props.classList.add("md:left-36", "md:top-32", "absolute");
+        });
+        divContent.forEach((props) => {
+            props.classList.remove("mt-20");
+        });
+        home.forEach((props) => {
+            props.classList.remove("h-101");
+            props.classList.add("h-100");
+        });
     }
 }
 

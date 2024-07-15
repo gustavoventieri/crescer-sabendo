@@ -24,12 +24,12 @@
                 <a href="#" class="text-purple-700  text-2xl font-itim hover:text-purple-900 hover:underline hover:pb-3 ">Home</a>
                 <a href="#aboutus" class="text-customBlue text-2xl font-itim hover:text-purple-900 hover:underline hover:pb-3" >Sobre nós</a>
                 <a href="#sponsors" class="text-customBlue text-2xl font-itim hover:text-purple-900 hover:underline hover:pb-3">Parcerias</a>
-                <a href="{{ url('/donates')}}" class="text-customBlue text-2xl font-itim hover:text-purple-900 hover:underline hover:pb-3">Doações</a>
-                <a href="{{ url('/donates')}}" class="text-customBlue text-2xl font-itim hover:text-purple-900 hover:underline hover:pb-3">Voluntários</a>
+                <a href="{{ url('/donates')}}#doacao" class="text-customBlue text-2xl font-itim hover:text-purple-900 hover:underline hover:pb-3">Doações</a>
+                <a href="{{ url('/donates')}}#voluntario" class="text-customBlue text-2xl font-itim hover:text-purple-900 hover:underline hover:pb-3">Voluntários</a>
             </nav>
 
             <div id="userAction" class="hidden md:flex items-center space-x-2 mr-3 ">
-                <a href="#" class="text-gray-600 hover:text-purple-900 ">
+                <a href="{{ url('/account') }}" class="text-gray-600 hover:text-purple-900 ">
                     <img id="userImg" class="h-10 mr-2" src="{{ asset('images/icons/userIconPurple.png') }}" alt="">
                 </a>
                 <a id="button" href="#" class="bg-customPurple ml-3 font-itim text-xl text-white px-3 py-1 rounded-full hover:bg-purple-900">Sign up</a>
@@ -43,26 +43,26 @@
         </div>
 
 
-        <div id="mobile-menu" class="md:hidden bg-white  py-2 px-4 ">
+        <div id="mobile-menu" class="hidden bg-white  py-2 px-4 ">
             <a href="#" class="text-purple-700 text-lg font-itim py-2  hover:text-purple-900">Home</a>
             <a href="#aboutus" class="block text-customBlue text-lg font-itim py-2  hover:text-purple-900">Sobre nós</a>
             <a href="#sponsors" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">Parcerias</a>
-            <a href="{{ url('/donates')}}" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">Doações</a>
-            <a href="{{ url('/donates')}}" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">Voluntários</a>
-            <a href="#" class="block  text-customBlue text-lg font-itim py-2 hover:text-purple-900">Entrar</a>
+            <a href="{{ url('/donates')}}#doacao" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">Doações</a>
+            <a href="{{ url('/donates')}}#voluntario" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">Voluntários</a>
+            <a href="{{ url('/account') }}" class="block  text-customBlue text-lg font-itim py-2 hover:text-purple-900">Entrar</a>
             <a href="#" class="block  text-customBlue text-lg font-itim py-2 hover:text-purple-900">Registrar-se</a>
         </div>
     </header>
     <!-- End Header -->
 
     <!-- Home  -->
-    <div class="relative w-screen h-100 mb-4 md:mb-10 -z-40">
+    <div id="home" class="relative w-screen h-100 mb-4 md:mb-10 -z-40">
         <div class="absolute inset-0 bg-gray-100"></div>
         <!-- Image -->
         <img src="{{ asset('images/backContent.png') }}" alt="" class="absolute inset-0 w-full h-full object-cover">
 
         <!-- Overlay Div -->
-        <div id="overlay" class="mr-3 absolute md:left-36 flex items-center justify-center p-4">
+        <div id="overlay" class="mr-3 absolute md:left-36 md:top-32 flex items-center justify-center p-4">
             <div  id="divContent" class="bg-white  rounded-3xl shadow-2xl p-14 max-w-lg text-center">
                 <h1 class="text-purple-700 text-3xl font-itim mb-4">Onde os sonhos ganham vida!</h1>
                 <p class="text-gray-700 text-xl font-itim">Oferecemos atividades extracurriculares para desenvolver a criatividade e a coordenação motora dos pequenos.</p>

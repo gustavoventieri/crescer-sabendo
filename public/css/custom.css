@@ -29,6 +29,10 @@
         height: 36rem;
     }
 
+    .h-101 {
+        height: 32.5rem;
+    }
+
     .p-h {
         padding: 0.5rem;
     }
@@ -53,6 +57,10 @@
         border-radius: 0 0 1rem 0;
         padding: 0.2rem;
         padding-left: -0.1rem;
+    }
+    .rounded-left-right-border {
+        border-bottom-right-radius: 2.1rem;
+        border-top-right-radius: 10.1rem;
     }
 }
 

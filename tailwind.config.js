@@ -12,6 +12,7 @@ export default {
                 customBlue: "#92BAE1",
                 customGreen: "#6CDD7E",
                 customDarkBlue: "#5656BF",
+                customRed: "#E15C5C",
             },
             borderRadius: {
                 "br-only": "0 0 0.21rem 0", // Defina o valor conforme necessário
