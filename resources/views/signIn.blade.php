@@ -15,15 +15,17 @@
     <div class="relative min-h-screen flex items-center justify-center bg-cover bg-center" >
         <div class="bg-gray-100 p-12 rounded-3xl shadow-md w-auto border border-black relative z-10 mx-3 my-6">
             <div class="flex justify-center mb-6">
-                <img src="{{ asset('images/logo.png') }}" alt="Logo Crescer Sabendo" class="h-16">
+                <a href="/">
+                    <img src="{{ asset('images/logo.png') }}" alt="Logo Crescer Sabendo" class="h-16">
+                </a>
             </div>
             <h2 class="text-center text-4xl font-semibold mb-6">Bem Vindo De Volta!!</h2>
             <div class="flex justify-between mb-4">
-                <button class="border border-gray-400 text-gray-600 w-auto p-2 rounded-xl flex items-center text-lg justify-center mr-2">
+                <button class="border border-gray-400 text-gray-600 w-auto p-2 rounded-xl flex items-center text-lg justify-center mr-2 hover:bg-gray-300">
                     <img src="{{ asset('images/google-logo.png') }}" alt="Google" class="h-9 ml-1 mr-2">
                     Faça login com Google
                 </button>
-                <button class="border border-gray-400 text-gray-600 w-auto p-2 rounded-xl flex items-center text-lg justify-center mr-2">
+                <button class="border border-gray-400 text-gray-600 w-auto p-2 rounded-xl flex items-center text-lg justify-center mr-2 hover:bg-gray-300">
                     <img src="{{ asset('images/apple-logo.png') }}" alt="Apple" class="h-7 mb-1 ml-1 mr-3">
                     Faça login com a Apple
                 </button>
