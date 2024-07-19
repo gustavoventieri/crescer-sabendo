@@ -167,7 +167,7 @@
     </div>
 
         <div class="flex justify-center ">
-            <button class="py-3 px-5 bg-purple-700 rounded-lg text-white font-bold mt-16 md:mt-20 text-xl">Criar Minha Conta</button>
+            <button class="py-3 px-5 bg-purple-700 rounded-lg text-white font-bold mt-16 md:mt-20 text-xl"><a href="/signup">Criar Minha Conta</a></button>
         </div>
 
 

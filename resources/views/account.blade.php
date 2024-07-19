@@ -85,10 +85,12 @@
                             <span class="text-sm text-gray-700">Sair</span>
                         </button>
                         <button class="w-full flex items-center py-1.5 px-6 space-x-2 hover:bg-gray-200">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
-                            </svg>
-                            <span class="text-sm text-gray-700">Excluir</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-log-out" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M11 5l-7 7l7 7" />
+                            <path d="M19 12h-14" />
+                        </svg>
+
                         </button>
                     </div>
                 </div>
