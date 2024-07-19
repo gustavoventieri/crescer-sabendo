@@ -1,3 +1,4 @@
+// Donates
 document.addEventListener("DOMContentLoaded", function () {
     const inputOtherValue = document.querySelectorAll(
         "#other-value-input-container"
@@ -103,14 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Enviar o formulário apenas quando o botão de doação for clicado
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    document
-        .getElementById("mobile-menu-toggle")
-        .addEventListener("click", function () {
-            document.getElementById("mobile-menu").classList.toggle("hidden");
-        });
-});
-
+// Styles
 function adjustStyles() {
     const logo = document.querySelectorAll("#logo");
     const plogo = document.querySelectorAll("#plogo");
@@ -345,3 +339,18 @@ function adjustStyles() {
 
 document.addEventListener("DOMContentLoaded", adjustStyles);
 window.addEventListener("resize", adjustStyles);
+
+// Toggles
+
+function toggleText(id) {
+    const element = document.getElementById(id);
+    element.classList.toggle("hidden");
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    document
+        .getElementById("mobile-menu-toggle")
+        .addEventListener("click", function () {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+});
