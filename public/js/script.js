@@ -225,11 +225,11 @@ function adjustStyles() {
     //AboutUs - Purple
     if (screenWidth > 767 && screenWidth <= 1340) {
         textContainer.forEach((props) => {
-            props.classList.remove("md:pt-52", "md:ml-28", "md:text-2xl");
+            props.classList.remove("md:ml-28", "md:text-2xl");
             props.classList.add("md:ml-10", "md:text-lg");
         });
         textP.forEach((props) => {
-            props.classList.remove("md:text-2xl");
+            props.classList.remove("md:text-4xl");
             props.classList.add("md:text-xl");
         });
         textH1.forEach((props) => {
@@ -239,11 +239,11 @@ function adjustStyles() {
     } else {
         textContainer.forEach((props) => {
             props.classList.remove("md:pt-10", "md:ml-10", "md:text-lg");
-            props.classList.add("md:pt-52", "md:ml-28", "md:text-2xl");
+            props.classList.add("md:ml-28", "md:text-2xl");
         });
         textP.forEach((props) => {
             props.classList.remove("md:text-xl");
-            props.classList.add("md:text-2xl");
+            props.classList.add("md:text-4xl");
         });
         textH1.forEach((props) => {
             props.classList.remove("md:text-2xl");

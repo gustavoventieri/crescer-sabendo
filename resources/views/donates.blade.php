@@ -27,10 +27,10 @@
             </nav>
 
             <div id="userAction" class="hidden md:flex items-center space-x-2 mr-3 ">
-                <a href="{{ url('/account') }}" class="text-gray-600 hover:text-green-600 ">
+                <a href="{{ url('/signin') }}" class="text-gray-600 hover:text-green-600 ">
                     <img id="userImg" class="h-10 mr-2" src="{{ asset('images/icons/userIconGreen.png') }}" alt="">
                 </a>
-                <a id="button" href="#" class="bg-customGreen ml-3 font-itim text-xl text-white px-3 py-1 rounded-full hover:bg-green-900">Sign up</a>
+                <a id="button" href="{{ url('/signup')}}" class="bg-customGreen ml-3 font-itim text-xl text-white px-3 py-1 rounded-full hover:bg-green-900">Sign up</a>
             </div>
 
             <div id="mobile-nav" class="md:hidden mr-5 ">
@@ -48,8 +48,8 @@
             <a href="{{ url('/')}}#sponsors" class="block text-customBlue text-lg font-itim py-2 hover:text-green-600">Parcerias</a>
             <a href="#doacao" class="block text-green-500 text-lg font-itim py-2 hover:text-green-600">Doações</a>
             <a href="#voluntario" class="block text-customBlue text-lg font-itim py-2 hover:text-green-600">Voluntários</a>
-            <a href="{{url('/account')}}" class="block  text-customBlue text-lg font-itim py-2 hover:text-green-600">Entrar</a>
-            <a href="#" class="block  text-customBlue text-lg font-itim py-2 hover:text-green-600">Registrar-se</a>
+            <a href="{{url('/signin')}}" class="block  text-customBlue text-lg font-itim py-2 hover:text-green-600">Entrar</a>
+            <a href="{{ url('/signup')}}" class="block  text-customBlue text-lg font-itim py-2 hover:text-green-600">Registrar-se</a>
         </div>
     </header>
 

@@ -15,8 +15,8 @@ Route::get('/courses', function () {
     return view('courses');
 });
 Route::get('/signin', function () {
-    return view('signin');
+    return view('signIn');
 });
 Route::get('/signup', function () {
-    return view('signup');
+    return view('signUp');
 });
