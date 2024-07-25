@@ -25,7 +25,7 @@
                 <nav id="navbar" class="hidden  md:flex items-center space-x-12 gap-14">
                     <a href="{{ url('/')}}" class="text-customBlue  text-2xl font-itim hover:text-customRed hover:underline hover:pb-3 ">Home</a>
                     <a href="#" class="text-customRed  text-2xl font-itim hover:text-customRed hover:underline hover:pb-3 ">Meus Dados</a>
-                    <a href="#" class="text-customBlue  text-2xl font-itim hover:text-customRed hover:underline hover:pb-3 ">Cursos</a>
+                    <a href="/courses" class="text-customBlue  text-2xl font-itim hover:text-customRed hover:underline hover:pb-3 ">Cursos</a>
                     <a href="{{ url('/donates') }}" class="text-customBlue text-2xl font-itim hover:text-customRed hover:underline hover:pb-3">Doações</a>
 
 
@@ -48,7 +48,7 @@
 
             <div id="mobile-menu" class="hidden bg-white  py-2 px-4 ">
                 <a href="#" class="block text-customRed  text-lg font-itim py-2 hover:text-customRed">Meus Dados</a>
-                <a href="#" class="block text-customBlue  text-lg font-itim py-2 hover:text-customRed ">Cursos</a>
+                <a href="/courses" class="block text-customBlue  text-lg font-itim py-2 hover:text-customRed ">Cursos</a>
                 <a href="{{ url('/')}}" class="block text-customBlue text-lg font-itim py-2  hover:text-customRed">Home</a>
                 <a href="{{ url('/donates') }}#doacao" class="block text-customBlue text-lg font-itim py-2 hover:text-customRed">Doações</a>
 
