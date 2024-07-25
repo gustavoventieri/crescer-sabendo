@@ -50,6 +50,9 @@
 
             </div>
         </header>
+
+
+        <hr class="bg-customBlue2 h-2 mb-4 mt-4"/>
         <footer class="w-full mt-auto">
             <img class="w-full h-auto" src="{{ asset('images/footerBlue.png') }}" alt="">
         </footer>
