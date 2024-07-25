@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function adjustStyles() {
     const logo = document.querySelectorAll("#logo");
     const plogo = document.querySelectorAll("#plogo");
-
+    const mobileid = document.querySelectorAll("#mobile-menu");
     const logoimg = document.querySelectorAll("#logo img");
     const nav = document.querySelectorAll("#navbar");
     const navLinks = document.querySelectorAll("#navbar a");
@@ -206,6 +206,11 @@ function adjustStyles() {
         button.forEach((props) => {
             props.classList.remove("text-base", "p-h");
             props.classList.add("text-xl", "px-4", "py-2");
+        });
+    }
+    if(screenWidth > 767){
+        mobileid.forEach((props) => {
+            props.classList.add("hidden");
         });
     }
 

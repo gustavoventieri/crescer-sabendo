@@ -51,7 +51,6 @@
                 <a href="/courses" class="block text-customBlue  text-lg font-itim py-2 hover:text-customRed ">Cursos</a>
                 <a href="{{ url('/')}}" class="block text-customBlue text-lg font-itim py-2  hover:text-customRed">Home</a>
                 <a href="{{ url('/donates') }}#doacao" class="block text-customBlue text-lg font-itim py-2 hover:text-customRed">Doações</a>
-
             </div>
         </header>
 
@@ -153,11 +152,6 @@
             </div>
         </div>
     </div>
-    <script>
-
-    </script>
-
-
     </body>
 </html>
 
