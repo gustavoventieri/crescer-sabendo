@@ -95,51 +95,6 @@
                 <p class=" text-xl">11 912345-6789</p>
             </div>
         </div>
-
-        <div class="container mx-auto px-4 py-8">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <!-- Card 1 -->
-            <div class="flex flex-col items-center">
-                <img src="https://via.placeholder.com/150" alt="Imagem 1" class="mb-2">
-                <button onclick="toggleText('text1')" class="mb-4 px-16 border border-black">
-                    <img src="https://via.placeholder.com/20x20?text=%E2%96%BC" alt="Seta para baixo">
-                </button>
-                <div id="text1" class="hidden">
-                    <p>Texto adicional exibido ao clicar no botão.</p>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="flex flex-col items-center">
-                <img src="https://via.placeholder.com/150" alt="Imagem 2" class="mb-2">
-                <button onclick="toggleText('text2')" class="mb-4 px-16 border border-black">
-                    <img src="https://via.placeholder.com/20x20?text=%E2%96%BC" alt="Seta para baixo">
-                </button>
-                <div id="text2" class="hidden">
-                    <p>Texto adicional exibido ao clicar no botão.</p>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="flex flex-col items-center">
-                <img src="https://via.placeholder.com/150" alt="Imagem 3" class="mb-2">
-                <button onclick="toggleText('text3')" class="mb-4 px-16 border border-black  ">
-                    <img src="https://via.placeholder.com/20x20?text=%E2%96%BC" alt="Seta para baixo">
-                </button>
-                <div id="text3" class="hidden">
-                    <p>Texto adicional exibido ao clicar no botão.</p>
-                </div>
-            </div>
-            <!-- Card 4 -->
-            <div class="flex flex-col items-center">
-                <img src="https://via.placeholder.com/150" alt="Imagem 4" class="mb-2">
-                <button onclick="toggleText('text4')" class="mb-4 px-16 border border-black">
-                    <img src="https://via.placeholder.com/20x20?text=%E2%96%BC" alt="Seta para baixo">
-                </button>
-                <div id="text4" class="hidden">
-                    <p>Texto adicional exibido ao clicar no botão.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    </body>
+        </body>
 </html>
 
