@@ -9,10 +9,10 @@ Route::get('/donates', function () {
     return view('user/doacoes');
 });
 Route::get('/account', function () {
-    return view('user/account');
+    return view('user/ong/account');
 });
 Route::get('/courses', function () {
-    return view('user/courses');
+    return view('user/ong/courses');
 });
 Route::get('/signin', function () {
     return view('user/signIn');

@@ -16,19 +16,16 @@
 
 </head>
     <body class="bg-gray-100 overflow-x-hidden">
-        <header class="bg-white  ">
+        <header class="bg-white">
             <div class="flex items-center justify-between ">
                 <div id="logo" class="flex items-center border p-5 bg-customRed rounded-br-only">
                     <p id="plogo" class="text-white font-itim text-5xl">Meu Perfil</p>
                 </div>
 
                 <nav id="navbar" class="hidden  md:flex items-center space-x-12 gap-14">
-                    <a href="{{ url('/')}}" class="text-customBlue  text-2xl font-itim hover:text-customRed hover:underline hover:pb-3 ">Home</a>
                     <a href="#" class="text-customRed  text-2xl font-itim hover:text-customRed hover:underline hover:pb-3 ">Meus Dados</a>
+                    <a href="/courses" class="text-customBlue  text-2xl font-itim hover:text-customRed hover:underline hover:pb-3 ">Mural</a>
                     <a href="/courses" class="text-customBlue  text-2xl font-itim hover:text-customRed hover:underline hover:pb-3 ">Cursos</a>
-                    <a href="{{ url('/donates') }}" class="text-customBlue text-2xl font-itim hover:text-customRed hover:underline hover:pb-3">Doações</a>
-
-
                 </nav>
 
                 <div id="userAction" class="hidden md:flex items-center space-x-2 mr-3 ">
@@ -49,8 +46,6 @@
             <div id="mobile-menu" class="hidden bg-white  py-2 px-4 ">
                 <a href="#" class="block text-customRed  text-lg font-itim py-2 hover:text-customRed">Meus Dados</a>
                 <a href="/courses" class="block text-customBlue  text-lg font-itim py-2 hover:text-customRed ">Cursos</a>
-                <a href="{{ url('/')}}" class="block text-customBlue text-lg font-itim py-2  hover:text-customRed">Home</a>
-                <a href="{{ url('/donates') }}#doacao" class="block text-customBlue text-lg font-itim py-2 hover:text-customRed">Doações</a>
             </div>
         </header>
 
@@ -83,14 +78,7 @@
                         </svg>
                             <span class="text-sm text-gray-700">Sair</span>
                         </button>
-                        <button class="w-full flex items-center py-1.5 px-6 space-x-2 hover:bg-gray-200">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-log-out" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M11 5l-7 7l7 7" />
-                            <path d="M19 12h-14" />
-                        </svg>
 
-                        </button>
                     </div>
                 </div>
             </div>
@@ -100,7 +88,7 @@
             <div class="flex flex-col ml-20 -mt-20">
                 <img src="https://vojislavd.com/ta-template-demo/assets/img/profile.jpg" class="w-40 border-4 border-white rounded-full">
                 <div class="flex items-start space-x-2 mt-2">
-                    <p class="text-2xl">Livia</p>
+                    <p class="text-2xl">Nome Ong</p>
 
                 </div>
                 <p class="text-xl">Emailpadrao@gmail.com</p>
