@@ -24,7 +24,7 @@
 
                 <nav id="navbar" class="hidden  md:flex items-center space-x-12 gap-14">
                     <a href="#" class="text-customRed  text-2xl font-itim hover:text-customRed hover:underline hover:pb-3 ">Meus Dados</a>
-                    <a href="/courses" class="text-customBlue  text-2xl font-itim hover:text-customRed hover:underline hover:pb-3 ">Mural</a>
+                    <a href="#" class="text-customBlue  text-2xl font-itim hover:text-customRed hover:underline hover:pb-3 ">Mural</a>
                     <a href="/courses" class="text-customBlue  text-2xl font-itim hover:text-customRed hover:underline hover:pb-3 ">Cursos</a>
                 </nav>
 
