@@ -70,7 +70,7 @@
         <div class="overflow-x-auto">
             <table class="max-w-5xl bg-white">
                 <thead>
-                    <tr class=" bg-blue-200 border border-black text-left">
+                    <tr class=" bg-customBlue2 border border-black text-left">
                         <th class="py-2 px-4">ONG</th>
                         <th class="py-2 px-4">Email</th>
                         <th class="py-2 px-4 text-center">
@@ -87,35 +87,35 @@
                     <tr class="border-b">
                         <td class="py-2 px-4">ONG</td>
                         <td class="py-2 px-4">Email</td>
-                        <td class="py-2 px-4">
+                        <td class="py-2 px-4 text-center mr-5">
+                            <button class=" bg-blue-500 text-white px-3 py-2 rounded-lg">✎</button>
+                        </td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-2 px-4">ONG</td>
+                        <td class="py-2 px-4">Email</td>
+                        <td class="py-2 px-4 text-center">
                             <button class="bg-blue-500 text-white px-3 py-2 rounded-lg">✎</button>
                         </td>
                     </tr>
                     <tr class="border-b">
                         <td class="py-2 px-4">ONG</td>
                         <td class="py-2 px-4">Email</td>
-                        <td class="py-2 px-4">
+                        <td class="py-2 px-4 text-center">
                             <button class="bg-blue-500 text-white px-3 py-2 rounded-lg">✎</button>
                         </td>
                     </tr>
                     <tr class="border-b">
                         <td class="py-2 px-4">ONG</td>
                         <td class="py-2 px-4">Email</td>
-                        <td class="py-2 px-4">
-                            <button class="bg-blue-500 text-white px-3 py-2 rounded-lg">✎</button>
-                        </td>
-                    </tr>
-                    <tr class="border-b">
-                        <td class="py-2 px-4">ONG</td>
-                        <td class="py-2 px-4">Email</td>
-                        <td class="py-2 px-4">
-                            <button class="bg-blue-500 text-white px-3 py-2 rounded-lg">✎</button>
+                        <td class="py-2 px-4 text-center">
+                            <button class=" bg-blue-500 text-white px-3 py-2 rounded-lg">✎</button>
                         </td>
                     </tr>
                     <tr>
                         <td class="py-2 px-4">ONG</td>
                         <td class="py-2 px-4">Email</td>
-                        <td class="py-2 px-4 ">
+                        <td class="py-2 px-4 text-center">
                             <button class="bg-blue-500 text-white px-3 py-2 rounded-lg">✎</button>
                         </td>
                     </tr>
