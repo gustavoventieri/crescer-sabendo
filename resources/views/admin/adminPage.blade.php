@@ -64,7 +64,7 @@
         <hr class="bg-customBlue2 h-2 mb-4 mt-4"/>
 
     <!-- Tabela de Gerenciamento -->
-    <h2 class="ml-10 text-gray-500 text-lg md:text-3xl  mb-4">Gerenciar ONGs Cadastradas</h2>
+    <h2 class="md:ml-10 text-gray-500 text-xl  md:text-3xl md:text-start text-center mb-4">Gerenciar ONGs Cadastradas</h2>
     <div class="flex justify-center items-center">
 
         <div class="overflow-x-auto">

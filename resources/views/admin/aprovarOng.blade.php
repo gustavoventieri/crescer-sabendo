@@ -43,8 +43,8 @@
 
 
             <div id="mobile-menu" class="hidden bg-white  py-2 px-4 ">
-                <a href="#" class="block text-customBlue2  text-lg font-itim py-2 ">Geral</a>
-                <a href="/aprovarong" class="block text-blue-700  text-lg font-itim py-2">Aprovar ONG's</a>
+                <a href="/admin" class="block text-customBlue2  text-lg font-itim py-2 ">Geral</a>
+                <a href="" class="block text-blue-700  text-lg font-itim py-2">Aprovar ONG's</a>
             </div>
         </header>
 
