@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Aprovar ONG - Admin</title>
+        <title>Home</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
@@ -18,18 +18,21 @@
     <body class="bg-gray-100 overflow-x-hidden">
         <header class="bg-white  ">
             <div class="flex items-center justify-between ">
-                <div id="logo" class="flex items-center p-5 bg-customBlue2 rounded-br-only">
-                    <p id="plogo" class="text-white font-itim text-5xl px-10">ADM</p>
+                <div id="logo" class="flex items-center p-5 bg-customRed rounded-br-only">
+                    <p id="plogo" class="text-white font-itim text-5xl">Meu Perfil</p>
                 </div>
 
                 <nav id="navbar" class="hidden  md:flex items-center space-x-12 gap-14">
-                    <a href="/admin" class="text-customBlue  text-2xl font-itim hover:text-blue-700 hover:underline hover:pb-3 ">Geral</a>
-                    <a href="#" class="text-blue-600 text-2xl font-itim hover:text-blue-700 hover:underline hover:pb-3 ">Aprovar ONG's</a>
+                    <a href="/account" class="text-customBlue  text-2xl font-itim hover:text-customRed hover:underline hover:pb-3 ">Meus Dados</a>
+                    <a href="#" class="text-customRed  text-2xl font-itim hover:text-customRed hover:underline hover:pb-3 ">Mural</a>
+                    <a href="/courses" class="text-customBlue   text-2xl font-itim hover:text-red-700   hover:underline hover:pb-3 ">Cursos</a>
+
+
                 </nav>
 
                 <div id="userAction" class="hidden md:flex items-center space-x-2 mr-3 ">
-                    <a href="#" class="text-gray-600 hover:text-blue-700 ">
-                        <img id="userImg" class="h-10 mr-2" src="{{ asset('images/icons/userIconBlue.png') }}" alt="">
+                    <a href="#" class="text-gray-600 hover:text-customRed ">
+                        <img id="userImg" class="h-10 mr-2" src="{{ asset('images/icons/userIconRed.png') }}" alt="">
                     </a>
                 </div>
 
@@ -43,16 +46,11 @@
 
 
             <div id="mobile-menu" class="hidden bg-white  py-2 px-4 ">
-                <a href="#" class="block text-customBlue2  text-lg font-itim py-2 ">Geral</a>
-                <a href="/aprovarong" class="block text-blue-700  text-lg font-itim py-2">Aprovar ONG's</a>
+                <a href="/account" class="block text-customBlue  text-lg font-itim py-2 hover:text-customRed">Meus Dados</a>
+                <a href="#" class="text-customBlue  text-lg font-itim hover:text-customRed  ">Mural</a>
+                <a href="/courses" class="block text-customRed  text-lg font-itim py-2 hover:text-customRed ">Cursos</a>
             </div>
         </header>
-
-
-        <hr class="bg-customBlue2 h-2 mb-4 mt-4"/>
-        <footer class="w-full mt-auto">
-            <img class="w-full h-auto" src="{{ asset('images/footerBlue.png') }}" alt="">
-        </footer>
     </body>
 </html>
 

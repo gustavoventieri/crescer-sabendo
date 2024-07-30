@@ -12,12 +12,12 @@
         @vite('resources/css/app.css')
 
 </head>
-<body class="bg-gray-100 overflow-x-hidden">
+<body class=" overflow-x-hidden">
     <!-- Header  -->
     <header class="bg-white ">
         <div class="flex items-center justify-between">
-            <div id="logo" class="flex items-center border bg-customPurple rounded-br-only">
-                <img src="{{ asset('images/logo.png') }}" alt="Logo" class=" pl-5 pb-2 pr-7 pt-1">
+            <div id="logo" class="flex items-center bg-customPurple rounded-br-only">
+                <img src="{{ asset('images/logo.png') }}" alt="Logo" class="pl-5 pb-2 pr-7 pt-1">
             </div>
 
             <nav id="navbar" class="hidden  md:flex items-center space-x-12 gap-14">
@@ -57,7 +57,7 @@
 
     <!-- Home  -->
     <div id="home" class="relative w-screen h-100 mb-4 md:mb-10 -z-40">
-        <div class="absolute inset-0 bg-gray-100"></div>
+
         <!-- Image -->
         <img src="{{ asset('images/backContent.png') }}" alt="" class="absolute inset-0 w-full h-full object-cover">
 
@@ -132,7 +132,7 @@
     <!-- End Courses  -->
 
     <!-- Dados -->
-    <div id="dadosContainer" class="relative p-8 bg-white shadow-2xl rounded-lg mx-auto mt-20 mb-20  w-container h-100">
+    <div id="dadosContainer" class="relative p-8 bg-white shadow-2xl rounded-lg mx-auto mt-20 mb-20 w-container h-100">
         <div id="quebracabeca"  class="absolute -z-50 top-10 left-0 transform -translate-x-44 -translate-y-2">
             <img id="quebraCabecaImage" class="hidden md:block h-64" src="{{ asset('images/quebra-cabeca.png') }}" alt="">
         </div>
@@ -140,12 +140,12 @@
             <img  id="abcImage" class="hidden md:block h-48" src="{{ asset('images/ABC.png') }}" alt="">
         </div>
         <div class="flex justify-center">
-            <h1 class=" text-purple-700 font-bold text-4xl">Faça parte você também !!</h1>
+            <h1 class=" text-purple-700  text-4xl">Faça parte você também !!</h1>
         </div>
         <div class="flex justify-center">
-            <p class=" font-bold text-2xl">São mais de:</p>
+            <p class=" text-2xl">São mais de:</p>
         </div>
-        <div class="md:mt-36 mt-24 grid grid-cols-3 gap-16 place-items-center">
+        <div class="md:mt-24 mt-24 grid grid-cols-3 gap-16 place-items-center">
         <div class="text-center">
             <svg class="w-12 h-12 mx-auto" fill="black" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M7 8h10v1H7V8zm0 3h8v1H7v-1zm-5 2a2 2 0 01-2-2V4a2 2 0 012-2h18a2 2 0 012 2v7a2 2 0 01-2 2H2zm18 1v1a2 2 0 01-2 2h-1v2a2 2 0 01-2 2H7a2 2 0 01-2-2v-2H4a2 2 0 01-2-2v-1h18z" />
@@ -167,7 +167,7 @@
     </div>
 
         <div class="flex justify-center ">
-            <button class="py-3 px-5 bg-purple-700 rounded-lg text-white font-bold mt-16 md:mt-20 text-xl"><a href="/signup">Criar Minha Conta</a></button>
+            <button class="py-3 px-5 bg-purple-700 rounded-lg text-white mt-16 md:mt-20 text-xl"><a href="/signup">Criar Minha Conta</a></button>
         </div>
 
 
@@ -182,34 +182,28 @@
             <div class="flex flex-col space-y-6 flex-grow">
                 <form action="">
                     <label class="block">
-                        <span class="block text-lg font-bold text-gray-700">Nome</span>
-                        <input type="text" class="mt-1 block w-full border-4 border-customPurple rounded-full px-6 py-3">
+                        <span class="block text-lg  text-gray-700">Nome</span>
+                        <input type="text" class="mt-1 block w-full border-4 border-customPurple rounded-xl px-6 py-3">
                     </label>
                     <label class="block">
-                        <span class="mt-2 block text-lg font-bold text-gray-700">Email</span>
-                        <input type="email" class="mt-1 block w-full border-4 border-customPurple rounded-full px-6 py-3">
+                        <span class="mt-2 block text-lg  text-gray-700">Email</span>
+                        <input type="email" class="mt-1 block w-full border-4 border-customPurple rounded-xl px-6 py-3">
                     </label>
                     <label class="block">
-                        <span class=" mt-2  block text-lg font-bold text-gray-700">Assunto</span>
-                        <input type="text" class="mt-1 block w-full border-4 border-customPurple rounded-full px-6 p-3">
+                        <span class=" mt-2  block text-lg  text-gray-700">Assunto</span>
+                        <input type="text" class="mt-1 block w-full border-4 border-customPurple rounded-xl px-6 p-3">
                     </label>
                     <label class="block">
-                        <span class="mt-2  block text-lg font-bold text-gray-700">Sua mensagem</span>
+                        <span class="mt-2  block text-lg  text-gray-700">Sua mensagem</span>
                         <textarea class="mt-1 block w-full border-4 border-customPurple  rounded-xl px-6 py-3"></textarea>
                     </label>
-                    <button class="bg-customPurple text-white font-itim rounded-full px-6 py-3 mt-4 self-start hover:bg-purple-900">Enviar</button>
+                    <button class="bg-customPurple text-white rounded-xl px-4 py-3 mt-4 self-start hover:bg-purple-900">Enviar</button>
                     </div>
 
 
-                    <div class="flex flex-col flex-grow">
-                        <h2 class="text-xl font-itim text-customPurple">Entre em contato</h2>
-                        <p class="font-bold text-lg">(11) 91234-5678</p>
-                        <p class="font-bold text-lg">xxxxx@gmail.com</p>
-                        <p class="font-bold text-lg">Rua Default, 987, Vila Default</p>
-                        <div class="mt-4">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3104.8194842695016!2d12.491233315872063!3d41.89021027922013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b7dcf6b33f%3A0xc57b1d1ac5673f9c!2sColosseum!5e0!3m2!1sen!2sit!4v1598637332157!5m2!1sen!2sit"
-                            width="100%" height="285" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <div class="flex flex-col flex-grow md:ml-10 md:w-52">
+                        <h2 class="text-2xl  text-customPurple">Entre em contato</h2>
+                        <p class="text-xl mt-5"> Se você tiver dúvidas, sugestões ou reclamações sobre o site, entre em contato conosco pelo e-mail xxxxx@gmail.com. Para dúvidas relacionadas a uma das organizações, consulte as informações de contato disponíveis na página de perfil de cada ONG.</p>
                     </div>
                 </form>
             </div>

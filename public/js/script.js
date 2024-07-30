@@ -162,7 +162,7 @@ function adjustStyles() {
     if (screenWidth > 767 && screenWidth <= 1470) {
         logo.forEach((props) => {
             props.classList.remove("rounded-br-only");
-            props.classList.add("borderr-right-sm");
+            props.classList.add("borderr-right-sm", "py-2", "px-2");
         });
         logoimg.forEach((props) => {
             props.classList.remove("pl-5", "pr-7", "pb-2", "pt-1");
@@ -186,7 +186,7 @@ function adjustStyles() {
     } else {
         logo.forEach((props) => {
             props.classList.remove("borderr-right-sm");
-            props.classList.add("rounded-br-only");
+            props.classList.add("borderr-right-sm", "py-2", "px-2");
         });
         logoimg.forEach((props) => {
             props.classList.remove("h-12");
@@ -208,7 +208,7 @@ function adjustStyles() {
             props.classList.add("text-xl", "px-4", "py-2");
         });
     }
-    if(screenWidth > 767){
+    if (screenWidth > 767) {
         mobileid.forEach((props) => {
             props.classList.add("hidden");
         });
@@ -256,6 +256,18 @@ function adjustStyles() {
         });
     }
 
+    if (screenWidth < 767) {
+        dadosContainer.forEach((props) => {
+            props.classList.remove("w-dados");
+            props.classList.add("w-dadossm");
+        });
+    } else {
+        dadosContainer.forEach((props) => {
+            props.classList.remove("w-dadossm");
+            props.classList.add("w-dados");
+        });
+    }
+
     if (screenWidth < 1400) {
         dadosContainer.forEach((props) => {
             props.classList.remove("w-container");
@@ -283,14 +295,12 @@ function adjustStyles() {
 
     // Index - Purple
 
-    if (screenWidth <= 1100) {
+    if (screenWidth <= 980) {
         quebraCabecaImage.forEach((props) => {
-            props.classList.remove("h-64");
-            props.classList.add("h-44");
+            props.classList.remove("md:block");
         });
         abcImage.forEach((props) => {
-            props.classList.remove("h-48");
-            props.classList.add("h-44");
+            props.classList.remove("md:block");
         });
     } else {
         quebraCabecaImage.forEach((props) => {

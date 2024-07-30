@@ -14,7 +14,7 @@
 <body class="bg-gray-100 overflow-x-hidden">
     <header class="bg-white  ">
         <div class="flex items-center justify-between ">
-        <div id="logo" class="flex items-center border bg-customGreen rounded-br-only">
+        <div id="logo" class="flex items-center bg-customGreen rounded-br-only">
                 <img src="{{ asset('images/logo.png') }}" alt="Logo" class=" pl-5 pb-2 pr-7 pt-1">
             </div>
 

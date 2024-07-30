@@ -18,13 +18,13 @@
     <body class="bg-gray-100 overflow-x-hidden">
         <header class="bg-white  ">
             <div class="flex items-center justify-between ">
-                <div id="logo" class="flex items-center border p-5 bg-customRed rounded-br-only">
+                <div id="logo" class="flex items-center p-5 bg-customRed rounded-br-only">
                     <p id="plogo" class="text-white font-itim text-5xl">Meu Perfil</p>
                 </div>
 
                 <nav id="navbar" class="hidden  md:flex items-center space-x-12 gap-14">
                     <a href="/account" class="text-customBlue  text-2xl font-itim hover:text-customRed hover:underline hover:pb-3 ">Meus Dados</a>
-                    <a href="#" class="text-customBlue  text-2xl font-itim hover:text-customRed hover:underline hover:pb-3 ">Mural</a>
+                    <a href="/mural" class="text-customBlue  text-2xl font-itim hover:text-customRed hover:underline hover:pb-3 ">Mural</a>
                     <a href="#" class="text-customRed   text-2xl font-itim hover:text-red-700   hover:underline hover:pb-3 ">Cursos</a>
 
 
@@ -47,7 +47,7 @@
 
             <div id="mobile-menu" class="hidden bg-white  py-2 px-4 ">
                 <a href="/account" class="block text-customBlue  text-lg font-itim py-2 hover:text-customRed">Meus Dados</a>
-                <a href="#" class="text-customBlue  text-2xl font-itim hover:text-customRed hover:underline hover:pb-3 ">Mural</a>
+                <a href="/mural" class="text-customBlue  text-lg font-itim hover:text-customRed  ">Mural</a>
                 <a href="" class="block text-customRed  text-lg font-itim py-2 hover:text-customRed ">Cursos</a>
             </div>
         </header>

@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="relative min-h-screen flex items-center justify-center bg-cover bg-center" >
-        <div class="bg-gray-100 p-12 rounded-3xl shadow-md w-auto border border-black relative z-10 mx-3 my-6">
+        <div class="bg-gray-100 px-6 py-9 rounded-3xl shadow-md w-auto border border-black relative z-10 mx-3 my-6">
             <button class="w-20 -translate-y-4 -translate-x-6 flex items-center py-1.5 px-6 space-x-2 hover:bg-gray-200">
                 <a href="/">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-log-out" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -29,14 +29,14 @@
                 </a>
             </div>
             <h2 class="text-center text-4xl font-semibold mb-6">Bem Vindo De Volta!!</h2>
-            <div class="flex justify-between mb-4">
-                <button class="border border-gray-400 text-gray-600 w-auto p-2 rounded-xl flex items-center text-lg justify-center mr-2 hover:bg-gray-300">
-                    <img src="{{ asset('images/google-logo.png') }}" alt="Google" class="h-9 ml-1 mr-2">
-                    Faça login com Google
+            <div class="flex justify-center md:justify-between mb-4">
+                <button class="border border-gray-400 text-gray-600 w-32 md:w-60 p-2 rounded-xl flex items-center text-lg justify-center mr-2 hover:bg-gray-300">
+                    <img src="{{ asset('images/google-logo.png') }}" alt="Google" class="h-9 ">
+
                 </button>
-                <button class="border border-gray-400 text-gray-600 w-auto p-2 rounded-xl flex items-center text-lg justify-center mr-2 hover:bg-gray-300">
-                    <img src="{{ asset('images/apple-logo.png') }}" alt="Apple" class="h-7 mb-1 ml-1 mr-3">
-                    Faça login com a Apple
+                <button class="border border-gray-400 text-gray-600 w-32 md:w-60 p-2 rounded-xl flex items-center text-lg justify-center mr-2 hover:bg-gray-300">
+                    <img src="{{ asset('images/apple-logo.png') }}" alt="Apple" class="h-7 mb-1 ">
+
                 </button>
             </div>
             <div class="flex items-center mb-4">
@@ -48,11 +48,11 @@
                 @csrf
                 <div class="mb-4">
                     <label for="email" class="block text-gray-700">Email</label>
-                    <input type="email" id="email" name="email" class="w-full p-2 rounded-full border-customDarkBlue border-2 h-12 focus:outline-none ">
+                    <input type="email" id="email" name="email" class="w-full p-2 rounded-xl border-customDarkBlue border-2 h-12 focus:outline-none ">
                 </div>
                 <div class="mb-4">
                     <label for="password" class="block text-gray-700">Senha</label>
-                    <input type="password" id="password" name="password" class="w-full p-2 border-2 border-customDarkBlue rounded-full h-12 focus:outline-none ">
+                    <input type="password" id="password" name="password" class="w-full p-2 border-2 border-customDarkBlue rounded-xl h-12 focus:outline-none ">
                 </div>
                 <div class="flex justify-between items-center mt-6 mb-4">
                     <label class="flex items-center">
