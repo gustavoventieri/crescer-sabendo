@@ -47,24 +47,24 @@
             </div>
         </header>
 
-        <div class="flex justify-around my-8">
-        <div class="bg-gray-200 rounded-lg shadow p-4 text-center w-1/4">
+        <div class="flex flex-col sm:flex-row sm:justify-around sm:space-y-0 space-y-4 my-8 mx-10">
+        <div class="bg-gray-200 rounded-lg shadow p-4 text-center w-full sm:w-1/4">
             <div class="text-6xl font-bold text-gray-600">000</div>
             <div class="text-lg mt-2">ONGs Cadastradas</div>
         </div>
-        <div class="bg-gray-200 rounded-lg shadow p-4 text-center w-1/4">
+        <div class="bg-gray-200 rounded-lg shadow p-4 text-center w-full sm:w-1/4">
             <div class="text-6xl font-bold text-gray-600">000</div>
             <div class="text-lg mt-2">Cursos Cadastrados</div>
         </div>
-        <div class="bg-gray-200 rounded-lg shadow p-4 text-center w-1/4">
+        <div class="bg-gray-200 rounded-lg shadow p-4 text-center w-full sm:w-1/4">
             <div class="text-6xl font-bold text-gray-600">000</div>
             <div class="text-lg mt-2">Alunos Cadastrados</div>
         </div>
-        </div>
+    </div>
         <hr class="bg-customBlue2 h-2 mb-4 mt-4"/>
 
     <!-- Tabela de Gerenciamento -->
-    <h2 class="ml-10 text-gray-500 text-3xl  mb-4">Gerenciar ONGs Cadastradas</h2>
+    <h2 class="ml-10 text-gray-500 text-lg md:text-3xl  mb-4">Gerenciar ONGs Cadastradas</h2>
     <div class="flex justify-center items-center">
 
         <div class="overflow-x-auto">
