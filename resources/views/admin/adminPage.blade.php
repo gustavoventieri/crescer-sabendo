@@ -16,7 +16,7 @@
 
 </head>
     <body class="bg-gray-100 overflow-x-hidden">
-        <header class="bg-white  ">
+        <header class="bg-white">
             <div class="flex items-center justify-between ">
                 <div id="logo" class="flex items-center  p-5 bg-customBlue2 rounded-br-only">
                     <p id="plogo" class="text-white font-itim text-5xl px-10">ADM</p>
@@ -67,62 +67,62 @@
     <h2 class="md:ml-10 text-gray-500 text-xl  md:text-3xl md:text-start text-center mb-4">Gerenciar ONGs Cadastradas</h2>
     <div class="flex justify-center items-center">
 
-        <div class="overflow-x-auto">
-            <table class="max-w-5xl bg-white">
-                <thead>
-                    <tr class=" bg-customBlue2 border border-black text-left">
-                        <th class="py-2 px-4">ONG</th>
-                        <th class="py-2 px-4">Email</th>
-                        <th class="py-2 px-4 text-center">
-                            <div class="relative">
-                                <input type="text" class="py-2 pl-4 pr-10 rounded-lg border font-normal border-gray-300 focus:outline-none focus:ring focus:border-blue-300" placeholder="Pesquisar...">
-                                <button class="absolute right-0 top-0 mt-2 mr-3">
-                                    🔍
-                                </button>
-                            </div>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody class="border border-black">
-                    <tr class="border-b">
-                        <td class="py-2 px-4">ONG</td>
-                        <td class="py-2 px-4">Email</td>
-                        <td class="py-2 px-4 text-center mr-5">
-                            <button class=" bg-blue-500 text-white px-3 py-2 rounded-lg">✎</button>
-                        </td>
-                    </tr>
-                    <tr class="border-b">
-                        <td class="py-2 px-4">ONG</td>
-                        <td class="py-2 px-4">Email</td>
-                        <td class="py-2 px-4 text-center">
-                            <button class="bg-blue-500 text-white px-3 py-2 rounded-lg">✎</button>
-                        </td>
-                    </tr>
-                    <tr class="border-b">
-                        <td class="py-2 px-4">ONG</td>
-                        <td class="py-2 px-4">Email</td>
-                        <td class="py-2 px-4 text-center">
-                            <button class="bg-blue-500 text-white px-3 py-2 rounded-lg">✎</button>
-                        </td>
-                    </tr>
-                    <tr class="border-b">
-                        <td class="py-2 px-4">ONG</td>
-                        <td class="py-2 px-4">Email</td>
-                        <td class="py-2 px-4 text-center">
-                            <button class=" bg-blue-500 text-white px-3 py-2 rounded-lg">✎</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="py-2 px-4">ONG</td>
-                        <td class="py-2 px-4">Email</td>
-                        <td class="py-2 px-4 text-center">
-                            <button class="bg-blue-500 text-white px-3 py-2 rounded-lg">✎</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+    <div class="">
+    <table class="overflow-x-scroll table-auto mx-3 ">
+        <thead>
+            <tr class="bg-customBlue2 border border-black text-left">
+                <th class="py-2 px-4">ONG</th>
+                <th class="py-2 px-4">Email</th>
+                <th class="py-2 px-4 text-center">
+                    <div class="relative">
+                        <input type="text" class="py-2 pl-4 pr-10 rounded-lg border font-normal border-gray-300 focus:outline-none focus:ring focus:border-blue-300 w-full" placeholder="Pesquisar...">
+                        <button class="absolute right-0 top-0 mt-2 mr-3 text-gray-600">
+                            🔍
+                        </button>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody class="border border-black">
+            <tr class="border-b">
+                <td class="py-2 px-4">ONG</td>
+                <td class="py-2 px-4">Email</td>
+                <td class="py-2 px-4 text-center">
+                    <button class="bg-blue-500 text-white px-3 py-2 rounded-lg">✎</button>
+                </td>
+            </tr>
+            <tr class="border-b">
+                <td class="py-2 px-4">ONG</td>
+                <td class="py-2 px-4">Email</td>
+                <td class="py-2 px-4 text-center">
+                    <button class="bg-blue-500 text-white px-3 py-2 rounded-lg">✎</button>
+                </td>
+            </tr>
+            <tr class="border-b">
+                <td class="py-2 px-4">ONG</td>
+                <td class="py-2 px-4">Email</td>
+                <td class="py-2 px-4 text-center">
+                    <button class="bg-blue-500 text-white px-3 py-2 rounded-lg">✎</button>
+                </td>
+            </tr>
+            <tr class="border-b">
+                <td class="py-2 px-4">ONG</td>
+                <td class="py-2 px-4">Email</td>
+                <td class="py-2 px-4 text-center">
+                    <button class="bg-blue-500 text-white px-3 py-2 rounded-lg">✎</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="py-2 px-4">ONG</td>
+                <td class="py-2 px-4">Email</td>
+                <td class="py-2 px-4 text-center">
+                    <button class="bg-blue-500 text-white px-3 py-2 rounded-lg">✎</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
         <footer class="w-full mt-auto">
             <img class="w-full h-auto" src="{{ asset('images/footerBlue.png') }}" alt="">
         </footer>

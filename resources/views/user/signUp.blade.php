@@ -13,8 +13,8 @@
 </head>
 <body>
     <div class="relative min-h-screen flex items-center justify-center bg-cover bg-center" >
-        <div class="bg-gray-100 px-6 py-9  rounded-3xl shadow-md  md:w-dados border border-black relative z-10 mx-3 my-6">
-            <button class="w-20 -translate-y-4 -translate-x-6 flex items-center py-1.5 px-6 space-x-2 hover:bg-gray-200">
+        <div class="bg-gray-100 px-6 py-9  rounded-3xl shadow-md  md:w-dados border border-black relative z-10 mx-10 my-6">
+            <button class="w-20 -translate-y-4 -translate-x-3 flex items-center py-1.5 px-6 space-x-2 hover:bg-gray-200 hover:rounded-lg">
                 <a href="/">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-log-out" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
