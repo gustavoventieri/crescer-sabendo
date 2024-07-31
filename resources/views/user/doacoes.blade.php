@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
-        @vite('resources/css/app.css')
-        <script src=" {{ asset('js/script.js') }} "></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+    @vite('resources/css/app.css')
+    <script src=" {{ asset('js/script.js') }} "></script>
 
 </head>
+
 <body class="bg-gray-100 overflow-x-hidden">
     <header class="bg-white  ">
         <div class="flex items-center justify-between ">
-        <div id="logo" class="flex items-center bg-customGreen rounded-br-only">
+            <div id="logo" class="flex items-center bg-customGreen rounded-br-only">
                 <img src="{{ asset('images/logo.png') }}" alt="Logo" class=" pl-5 pb-2 pr-7 pt-1">
             </div>
 
             <nav id="navbar" class="hidden  md:flex items-center space-x-12 gap-14">
                 <a href="{{ url('/')}}#" class="text-customBlue  text-2xl font-itim hover:text-green-600 hover:underline hover:pb-3 ">Home</a>
-                <a href="{{ url('/')}}#aboutus" class="text-customBlue text-2xl font-itim hover:text-green-600 hover:underline hover:pb-3" >Sobre nós</a>
+                <a href="{{ url('/')}}#aboutus" class="text-customBlue text-2xl font-itim hover:text-green-600 hover:underline hover:pb-3">Sobre nós</a>
                 <a href="{{ url('/')}}#sponsors" class="text-customBlue text-2xl font-itim hover:text-green-600 hover:underline hover:pb-3">Parcerias</a>
                 <a href="#doacao" class="text-customBlue text-2xl font-itim hover:text-green-600 hover:underline hover:pb-3">Doações</a>
                 <a href="#voluntario" class="text-customGreen text-2xl font-itim hover:text-green-600 hover:underline hover:pb-3">Voluntários</a>
@@ -61,7 +63,7 @@
                     <div class="flex justify-center mb-4">
                         <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
                             <!-- Ícone de conversa -->
-                            <path d="M19 0H5C2.238 0 0 2.238 0 5v14c0 2.762 2.238 5 5 5h14c2.762 0 5-2.238 5-5V5c0-2.762-2.238-5-5-5zm0 18H5c-1.103 0-2-.897-2-2V5c0-1.103.897-2 2-2h14c1.103 0 2 .897 2 2v11c0 1.103-.897 2-2 2zm-7-7h-2V9h2v2zm4 0h-2V9h2v2zm-8 0H6V9h2v2z"/>
+                            <path d="M19 0H5C2.238 0 0 2.238 0 5v14c0 2.762 2.238 5 5 5h14c2.762 0 5-2.238 5-5V5c0-2.762-2.238-5-5-5zm0 18H5c-1.103 0-2-.897-2-2V5c0-1.103.897-2 2-2h14c1.103 0 2 .897 2 2v11c0 1.103-.897 2-2 2zm-7-7h-2V9h2v2zm4 0h-2V9h2v2zm-8 0H6V9h2v2z" />
                         </svg>
                     </div>
                     <h2 class="text-center text-xl font-itim">Doação Monetária</h2>
@@ -72,7 +74,7 @@
                     <div class="flex justify-center mb-4">
                         <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
                             <!-- Ícone de conversa -->
-                            <path d="M19 0H5C2.238 0 0 2.238 0 5v14c0 2.762 2.238 5 5 5h14c2.762 0 5-2.238 5-5V5c0-2.762-2.238-5-5-5zm0 18H5c-1.103 0-2-.897-2-2V5c0-1.103.897-2 2-2h14c1.103 0 2 .897 2 2v11c0 1.103-.897 2-2 2zm-7-7h-2V9h2v2zm4 0h-2V9h2v2zm-8 0H6V9h2v2z"/>
+                            <path d="M19 0H5C2.238 0 0 2.238 0 5v14c0 2.762 2.238 5 5 5h14c2.762 0 5-2.238 5-5V5c0-2.762-2.238-5-5-5zm0 18H5c-1.103 0-2-.897-2-2V5c0-1.103.897-2 2-2h14c1.103 0 2 .897 2 2v11c0 1.103-.897 2-2 2zm-7-7h-2V9h2v2zm4 0h-2V9h2v2zm-8 0H6V9h2v2z" />
                         </svg>
                     </div>
                     <h2 class="text-center text-xl font-itim">Deduza do I.R. da sua empresa</h2>
@@ -83,7 +85,7 @@
                     <div class="flex justify-center mb-4">
                         <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
                             <!-- Ícone de conversa -->
-                            <path d="M19 0H5C2.238 0 0 2.238 0 5v14c0 2.762 2.238 5 5 5h14c2.762 0 5-2.238 5-5V5c0-2.762-2.238-5-5-5zm0 18H5c-1.103 0-2-.897-2-2V5c0-1.103.897-2 2-2h14c1.103 0 2 .897 2 2v11c0 1.103-.897 2-2 2zm-7-7h-2V9h2v2zm4 0h-2V9h2v2zm-8 0H6V9h2v2z"/>
+                            <path d="M19 0H5C2.238 0 0 2.238 0 5v14c0 2.762 2.238 5 5 5h14c2.762 0 5-2.238 5-5V5c0-2.762-2.238-5-5-5zm0 18H5c-1.103 0-2-.897-2-2V5c0-1.103.897-2 2-2h14c1.103 0 2 .897 2 2v11c0 1.103-.897 2-2 2zm-7-7h-2V9h2v2zm4 0h-2V9h2v2zm-8 0H6V9h2v2z" />
                         </svg>
                     </div>
                     <h2 class="text-center text-xl font-itim">Doação em produtos</h2>
@@ -94,7 +96,7 @@
                     <div class="flex justify-center mb-4">
                         <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
                             <!-- Ícone de conversa -->
-                            <path d="M19 0H5C2.238 0 0 2.238 0 5v14c0 2.762 2.238 5 5 5h14c2.762 0 5-2.238 5-5V5c0-2.762-2.238-5-5-5zm0 18H5c-1.103 0-2-.897-2-2V5c0-1.103.897-2 2-2h14c1.103 0 2 .897 2 2v11c0 1.103-.897 2-2 2zm-7-7h-2V9h2v2zm4 0h-2V9h2v2zm-8 0H6V9h2v2z"/>
+                            <path d="M19 0H5C2.238 0 0 2.238 0 5v14c0 2.762 2.238 5 5 5h14c2.762 0 5-2.238 5-5V5c0-2.762-2.238-5-5-5zm0 18H5c-1.103 0-2-.897-2-2V5c0-1.103.897-2 2-2h14c1.103 0 2 .897 2 2v11c0 1.103-.897 2-2 2zm-7-7h-2V9h2v2zm4 0h-2V9h2v2zm-8 0H6V9h2v2z" />
                         </svg>
                     </div>
                     <h2 class="text-center text-xl font-itim">Ajude na divulgação de uma ONG</h2>
@@ -187,19 +189,17 @@
                         <textarea class="mt-1 block w-full border-4 border-customGreen  rounded-xl px-6 py-3"></textarea>
                     </label>
                     <button class="bg-customGreen text-white font-itim rounded-full px-6 py-3 mt-4 self-start hover:bg-purple-900">Enviar</button>
-                    </div>
+            </div>
 
 
-                    <div class="flex flex-col flex-grow">
-                        <h2 class="text-xl font-itim text-customGreen">Entre em contato</h2>
-                        <p class="font-bold text-lg">(11) 91234-5678</p>
-                        <p class="font-bold text-lg">xxxxx@gmail.com</p>
-                        <p class="font-bold text-lg">Rua Default, 987, Vila Default</p>
-                        <div class="mt-4">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3104.8194842695016!2d12.491233315872063!3d41.89021027922013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b7dcf6b33f%3A0xc57b1d1ac5673f9c!2sColosseum!5e0!3m2!1sen!2sit!4v1598637332157!5m2!1sen!2sit"
-                            width="100%" height="285" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    </div>
+            <div class="flex flex-col flex-grow">
+                <h2 class="text-xl font-itim text-customGreen">Entre em contato</h2>
+                <p class="font-bold text-lg">(11) 91234-5678</p>
+                <p class="font-bold text-lg">xxxxx@gmail.com</p>
+                <p class="font-bold text-lg">Rua Default, 987, Vila Default</p>
+                <div class="mt-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3104.8194842695016!2d12.491233315872063!3d41.89021027922013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b7dcf6b33f%3A0xc57b1d1ac5673f9c!2sColosseum!5e0!3m2!1sen!2sit!4v1598637332157!5m2!1sen!2sit" width="100%" height="285" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
                 </form>
             </div>
         </div>
@@ -221,6 +221,5 @@
 
 
 </body>
+
 </html>
-
-
