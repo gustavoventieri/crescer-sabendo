@@ -34,7 +34,7 @@
 
                 <div id="mobile-nav" class="md:hidden mr-5 ">
                     <button id="mobile-menu-toggle" class="focus:outline-none">
-                        <img class="h-10" src="{{ asset('images/icons/taskbarRed.png') }}" alt="">
+                        <img class="h-10" src="{{ asset('images/icons/taskbarBlue.png') }}" alt="">
                     </button>
                 </div>
 
@@ -65,64 +65,123 @@
 
     <!-- Tabela de Gerenciamento -->
     <h2 class="md:ml-10 text-gray-500 text-xl  md:text-3xl md:text-start text-center mb-4">Gerenciar ONGs Cadastradas</h2>
-    <div class="flex justify-center items-center">
+     <!-- Tabela de Gerenciamento -->
+     <div class="flex justify-center mx-auto  rounded-lg  p-6">
 
-    <div class="">
-    <table class="overflow-x-scroll table-auto mx-3 ">
-        <thead>
-            <tr class="bg-customBlue2 border border-black text-left">
-                <th class="py-2 px-4">ONG</th>
-                <th class="py-2 px-4">Email</th>
-                <th class="py-2 px-4 text-center">
-                    <div class="relative">
-                        <input type="text" class="py-2 pl-4 pr-10 rounded-lg border font-normal border-gray-300 focus:outline-none focus:ring focus:border-blue-300 w-full" placeholder="Pesquisar...">
-                        <button class="absolute right-0 top-0 mt-2 mr-3 text-gray-600">
-                            🔍
+        <div class="overflow-x-auto">
+            <table class=" bg-white">
+                <thead>
+                    <tr class="bg-customBlue2 border border-black text-left">
+                        <th class="py-2 px-4 text-white">ONG</th>
+                        <th class="py-2 px-4 text-white">Email</th>
+                        <th class="py-2 px-4 text-center text-white">
+                            <div class="hidden md:block relative text-left">
+                                <input type="text" class="py-2 pl-4 w-60 rounded-lg border font-normal border-gray-300 focus:outline-none focus:ring focus:border-blue-300 " placeholder="Pesquisar...">
+                                <button class="absolute left-52 top-0 mt-2 text-gray-600">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="border border-black">
+                    <tr class="border-b">
+                        <td class="py-2 px-4">ONG</td>
+                        <td class="py-2 px-4">Email</td>
+                        <td class="py-2 px-4 text-center">
+
+                        <button class=" text-gray-500" onclick="toggleModal('modal')">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+                            </svg>
                         </button>
-                    </div>
-                </th>
-            </tr>
-        </thead>
-        <tbody class="border border-black">
-            <tr class="border-b">
-                <td class="py-2 px-4">ONG</td>
-                <td class="py-2 px-4">Email</td>
-                <td class="py-2 px-4 text-center">
-                    <button class="bg-blue-500 text-white px-3 py-2 rounded-lg">✎</button>
-                </td>
-            </tr>
-            <tr class="border-b">
-                <td class="py-2 px-4">ONG</td>
-                <td class="py-2 px-4">Email</td>
-                <td class="py-2 px-4 text-center">
-                    <button class="bg-blue-500 text-white px-3 py-2 rounded-lg">✎</button>
-                </td>
-            </tr>
-            <tr class="border-b">
-                <td class="py-2 px-4">ONG</td>
-                <td class="py-2 px-4">Email</td>
-                <td class="py-2 px-4 text-center">
-                    <button class="bg-blue-500 text-white px-3 py-2 rounded-lg">✎</button>
-                </td>
-            </tr>
-            <tr class="border-b">
-                <td class="py-2 px-4">ONG</td>
-                <td class="py-2 px-4">Email</td>
-                <td class="py-2 px-4 text-center">
-                    <button class="bg-blue-500 text-white px-3 py-2 rounded-lg">✎</button>
-                </td>
-            </tr>
-            <tr>
-                <td class="py-2 px-4">ONG</td>
-                <td class="py-2 px-4">Email</td>
-                <td class="py-2 px-4 text-center">
-                    <button class="bg-blue-500 text-white px-3 py-2 rounded-lg">✎</button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-</div>
+
+                        </td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-2 px-4">ONG</td>
+                        <td class="py-2 px-4">Email</td>
+                        <td class="py-2 px-4 text-center">
+                        <button class=" text-gray-500" onclick="toggleModal('modal')">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+                            </svg>
+                        </button>
+                        </td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-2 px-4">ONG</td>
+                        <td class="py-2 px-4">Email</td>
+                        <td class="py-2 px-4 text-center">
+                        <button class=" text-gray-500" onclick="toggleModal('modal')">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+                            </svg>
+                        </button>
+                        </td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-2 px-4">ONG</td>
+                        <td class="py-2 px-4">Email</td>
+                        <td class="py-2 px-4 text-center">
+                        <button class=" text-gray-500" onclick="toggleModal('modal')">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+                            </svg>
+                        </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4">ONG</td>
+                        <td class="py-2 px-4">Email</td>
+                        <td class="py-2 px-4 text-center">
+                        <button class=" text-gray-500" onclick="toggleModal('modal')">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+                            </svg>
+                        </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden">
+        <div class="bg-white rounded-lg shadow-lg h-101  p-6 w-2/6 mx-4 flex flex-col">
+            <h2 class="text-2xl  translate-y-7 mb-4 text-center">Crescer Sabendo</h2>
+            <div class="flex flex-col mt-20 gap-12">
+                <button class="bg-customBlue2 text-white py-2 rounded-xl hover:bg-blue-500">Ver Página da ONG</button>
+                <button class="bg-customBlue2 text-white py-2 rounded-xl hover:bg-blue-500" onclick="toggleModal('modal-dados', 'modal')">Dados de Contato</button>
+                <button class="bg-customBlue2 text-white py-2 rounded-xl hover:bg-blue-500">Excluir Cadastro da ONG</button>
+            </div>
+            <div class="mt-auto">
+                <button class="w-full py-2 rounded-xl border border-gray-300 text-gray-700" onclick="toggleModal('modal')">Fechar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-dados" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden">
+        <div class="bg-white rounded-lg shadow-lg h-101  p-6 w-2/6 mx-4 flex flex-col">
+            <h2 class="text-2xl font-semibold mb-4 text-center">Nome ONG</h2>
+            <div class="flex flex-col space-y-2 ">
+                <h2 class="text-xl">Email</h2>
+                <p>Exemplo</p>
+                <h2 class="text-xl">Telefone</h2>
+                <p>Exemplo</p>
+                <h2 class="text-xl">Telefone 2</h2>
+                <p>Exemplo</p>
+                <h2 class="text-xl">Endereço</h2>
+                <p>Exemplo</p>
+
+            </div>
+            <div class="mt-auto">
+                <button class="w-full py-2 rounded-xl border border-gray-300 text-gray-700" onclick="toggleModal('modal-dados')">Fechar</button>
+            </div>
+        </div>
+    </div>
         <footer class="w-full mt-auto">
             <img class="w-full h-auto" src="{{ asset('images/footerBlue.png') }}" alt="">
         </footer>

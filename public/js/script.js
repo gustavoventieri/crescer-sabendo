@@ -361,7 +361,9 @@ function toggleText(id) {
     const element = document.getElementById(id);
     element.classList.toggle("hidden");
 }
-
+function toggleModal(modalID) {
+    document.getElementById(modalID).classList.toggle("hidden");
+}
 document.addEventListener("DOMContentLoaded", function () {
     document
         .getElementById("mobile-menu-toggle")

@@ -35,7 +35,7 @@
 
                 <div id="mobile-nav" class="md:hidden mr-5 ">
                     <button id="mobile-menu-toggle" class="focus:outline-none">
-                        <img class="h-10" src="{{ asset('images/icons/taskbarRed.png') }}" alt="">
+                        <img class="h-10" src="{{ asset('images/icons/taskbarBlue.png') }}" alt="">
                     </button>
                 </div>
 
@@ -47,9 +47,165 @@
                 <a href="" class="block text-blue-700  text-lg font-itim py-2">Aprovar ONG's</a>
             </div>
         </header>
+        <h2 class="md:ml-10 text-gray-500 text-xl mt-10  md:text-3xl md:text-start text-center mb-4">Aprovar ONGs</h2>
+     <!-- Tabela de Gerenciamento -->
+     <div class="flex justify-center mx-auto  rounded-lg  p-6">
+
+        <div class="overflow-x-auto">
+            <table class=" bg-white">
+                <thead>
+                    <tr class="bg-customBlue2 border border-black text-left">
+                        <th class="py-2 px-4 text-white">ONG</th>
+                        <th class="py-2 px-4 text-white">Email</th>
+                        <th class="py-2 px-4 text-center text-white">Opções</th>
+                    </tr>
+                </thead>
+                <tbody class="border border-black">
+                    <tr class="border-b">
+                        <td class="py-2 px-4">ONG</td>
+                        <td class="py-2 px-4">Email</td>
+                        <td class="py-2 px-4 text-center">
+                            <button class="text-gray-500" onclick="toggleModal('modal')">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+                                </svg>
+                            </button>
+                            <button class=" px-1 py-2 rounded-lg" >
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-green-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
 
 
-        <hr class="bg-customBlue2 h-2 mb-4 mt-4"/>
+                            </button>
+                            <button class=" px-1 py-2 rounded-lg" >
+                                <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-red-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-2 px-4">ONG</td>
+                        <td class="py-2 px-4">Email</td>
+                        <td class="py-2 px-4 text-center">
+                            <button class=" text-gray-500" onclick="toggleModal('modal')">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+                                </svg>
+                            </button>
+                            <button class=" px-1 py-2 rounded-lg" >
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-green-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                </svg>
+                            </button>
+                            <button class=" px-1 py-2 rounded-lg" >
+                                <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-red-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-2 px-4">ONG</td>
+                        <td class="py-2 px-4">Email</td>
+                        <td class="py-2 px-4 text-center">
+                            <button class="text-gray-500" onclick="toggleModal('modal')">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+                                </svg>
+                            </button>
+                            <button class=" px-1 py-2 rounded-lg" >
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-green-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+                            </button>
+                            <button class=" px-1 py-2 rounded-lg" >
+                                <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-red-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-2 px-4">ONG</td>
+                        <td class="py-2 px-4">Email</td>
+                        <td class="py-2 px-4 text-center">
+                            <button class="text-gray-500" onclick="toggleModal('modal')">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+                                </svg>
+                            </button>
+                            <button class=" px-1 py-2 rounded-lg" >
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-green-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+                            </button>
+                            <button class=" px-1 py-2 rounded-lg" >
+                                <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-red-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4">ONG</td>
+                        <td class="py-2 px-4">Email</td>
+                        <td class="py-2 px-4 text-center">
+                            <button class="text-gray-500" onclick="toggleModal('modal')">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+                                </svg>
+                            </button>
+                            <button class=" px-1 py-2 rounded-lg" >
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-green-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+                            </button>
+                            <button class=" px-1 py-2 rounded-lg" >
+                                <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-red-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden">
+        <div class="bg-white rounded-lg shadow-lg h-101  p-6 w-2/6 mx-4 flex flex-col">
+            <h2 class="text-2xl  translate-y-7 mb-4 text-center">Crescer Sabendo</h2>
+            <div class="flex flex-col mt-10 gap-6">
+                <button class="bg-customBlue2 text-white py-2 rounded-xl hover:bg-blue-500">Ver Página da ONG</button>
+                <button class="bg-customBlue2 text-white py-2 rounded-xl hover:bg-blue-500" onclick="toggleModal('modal-dados', 'modal')">Dados de Contato</button>
+
+            </div>
+            <div class="mt-auto">
+                <button class="w-full py-2 rounded-xl border border-gray-300 text-gray-700" onclick="toggleModal('modal')">Fechar</button>
+            </div>
+        </div>
+    </div>
+    <div id="modal-dados" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden">
+        <div class="bg-white rounded-lg shadow-lg h-101  p-6 w-2/6 mx-4 flex flex-col">
+            <h2 class="text-2xl  mb-4 text-center">Nome ONG</h2>
+            <div class="flex flex-col space-y-2 ">
+                <h2 class="text-xl">Email</h2>
+                <p>Exemplo</p>
+                <h2 class="text-xl">Telefone</h2>
+                <p>Exemplo</p>
+                <h2 class="text-xl">Telefone 2</h2>
+                <p>Exemplo</p>
+                <h2 class="text-xl">Endereço</h2>
+                <p>Exemplo</p>
+
+            </div>
+            <div class="mt-auto">
+                <button class="w-full py-2 rounded-xl border border-gray-300 text-gray-700" onclick="toggleModal('modal-dados')">Fechar</button>
+            </div>
+        </div>
+    </div>
+
         <footer class="w-full mt-auto">
             <img class="w-full h-auto" src="{{ asset('images/footerBlue.png') }}" alt="">
         </footer>
