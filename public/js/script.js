@@ -116,9 +116,6 @@ function adjustStyles() {
     const button = document.querySelectorAll("#button");
     const gridIcons = document.querySelectorAll("#gridIcons");
     const gridCourses = document.querySelectorAll("#gridCourses");
-    const textContainer = document.querySelectorAll("#text-container");
-    const textP = document.querySelectorAll("#textP");
-    const textH1 = document.querySelectorAll("#textH1");
     const dadosContainer = document.querySelectorAll("#dadosContainer");
     const childImage = document.querySelectorAll("#childrenImage");
     const quebraCabecaImage = document.querySelectorAll("#quebraCabecaImage");
@@ -214,72 +211,6 @@ function adjustStyles() {
         });
     }
 
-    // IconsCard - Purple
-    if (screenWidth <= 1170) {
-        gridIcons.forEach((props) => {
-            props.classList.remove("md:grid-cols-3");
-            props.classList.add("md:grid-cols-1");
-        });
-    } else {
-        gridIcons.forEach((props) => {
-            props.classList.remove("md:grid-cols-1");
-            props.classList.add("md:grid-cols-3");
-        });
-    }
-
-    //AboutUs - Purple
-    if (screenWidth > 767 && screenWidth <= 1340) {
-        textContainer.forEach((props) => {
-            props.classList.remove("md:ml-28", "md:text-2xl");
-            props.classList.add("md:ml-10", "md:text-lg");
-        });
-        textP.forEach((props) => {
-            props.classList.remove("md:text-4xl");
-            props.classList.add("md:text-xl");
-        });
-        textH1.forEach((props) => {
-            props.classList.remove("md:text-3xl");
-            props.classList.add("md:text-2xl");
-        });
-    } else {
-        textContainer.forEach((props) => {
-            props.classList.remove("md:pt-10", "md:ml-10", "md:text-lg");
-            props.classList.add("md:ml-28", "md:text-2xl");
-        });
-        textP.forEach((props) => {
-            props.classList.remove("md:text-xl");
-            props.classList.add("md:text-4xl");
-        });
-        textH1.forEach((props) => {
-            props.classList.remove("md:text-2xl");
-            props.classList.add("md:text-3xl");
-        });
-    }
-
-    if (screenWidth < 767) {
-        dadosContainer.forEach((props) => {
-            props.classList.remove("w-dados");
-            props.classList.add("w-dadossm");
-        });
-    } else {
-        dadosContainer.forEach((props) => {
-            props.classList.remove("w-dadossm");
-            props.classList.add("w-dados");
-        });
-    }
-
-    if (screenWidth < 1400) {
-        dadosContainer.forEach((props) => {
-            props.classList.remove("w-container");
-            props.classList.add("w-dados");
-        });
-    } else {
-        dadosContainer.forEach((props) => {
-            props.classList.remove("w-dados");
-            props.classList.add("w-container");
-        });
-    }
-
     // Courses - Purple
     if (screenWidth > 767 && screenWidth <= 1070) {
         gridCourses.forEach((props) => {
@@ -293,9 +224,7 @@ function adjustStyles() {
         });
     }
 
-    // Index - Purple
-
-    if (screenWidth <= 980) {
+    if (screenWidth <= 1100) {
         quebraCabecaImage.forEach((props) => {
             props.classList.remove("md:block");
         });
@@ -304,12 +233,10 @@ function adjustStyles() {
         });
     } else {
         quebraCabecaImage.forEach((props) => {
-            props.classList.remove("h-44");
-            props.classList.add("h-64");
+            props.classList.add("md:block");
         });
         abcImage.forEach((props) => {
-            props.classList.remove("h-44");
-            props.classList.add("h-48");
+            props.classList.add("md:block");
         });
     }
 
@@ -328,10 +255,16 @@ function adjustStyles() {
     if (screenWidth < 1260) {
         overlay.forEach((props) => {
             props.classList.remove("md:left-36", "md:top-32", "absolute");
-            props.classList.add("transform");
+            props.classList.add(
+                "transform",
+                "flex",
+                "items-center",
+                "justify-center"
+            );
         });
         divContent.forEach((props) => {
-            props.classList.add("mt-20");
+            props.classList.remove("md:mt-0");
+            props.classList.add("mt-16");
         });
         home.forEach((props) => {
             props.classList.remove("h-100");
@@ -339,11 +272,17 @@ function adjustStyles() {
         });
     } else {
         overlay.forEach((props) => {
-            props.classList.remove("transform");
+            props.classList.remove(
+                "transform",
+                "flex",
+                "items-center",
+                "justify-center"
+            );
             props.classList.add("md:left-36", "md:top-32", "absolute");
         });
         divContent.forEach((props) => {
-            props.classList.remove("mt-20");
+            props.classList.remove("mt-16");
+            props.classList.remove("md:mt-0");
         });
         home.forEach((props) => {
             props.classList.remove("h-101");

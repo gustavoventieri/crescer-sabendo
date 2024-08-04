@@ -15,56 +15,27 @@
 
 <body>
     <div class="relative min-h-screen flex items-center justify-center bg-cover bg-center">
-        <div class="bg-gray-100 px-6 py-9  rounded-3xl shadow-md  md:w-dados border border-black relative z-10 mx-10 my-6">
-            <button class="w-20 -translate-y-4 -translate-x-3 flex items-center py-1.5 px-6 space-x-2 hover:bg-gray-200 hover:rounded-lg">
-                <a href="/">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-log-out" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M11 5l-7 7l7 7" />
-                        <path d="M19 12h-14" />
-                    </svg>
-                </a>
-            </button>
+        <div class="bg-white w-[450px] mx-5 px-8 py-10 rounded-3xl shadow-md border border-gray-300 relative z-10">
             <div class="flex justify-center mb-6">
-                <a href="/">
-                    <img src="{{ asset('images/logo.png') }}" alt="Logo Crescer Sabendo" class="h-16">
+                <img src="{{ asset('images/logo.png') }}" alt="Logo Crescer Sabendo" class="h-16">
+            </div>
+            <h2 class="text-center text-3xl font-bold mb-6">Seja bem-vindo!!</h2>
+            <div class="grid grid-cols-1 gap-4">
+                <a href="/aluno/signup">
+                    <div class="rounded-lg pl-2 py-4 shadow-lg hover:bg-gray-100 hover:shadow-2xl">
+                        Aluno
+                    </div>
                 </a>
-            </div>
-            <h2 class="text-center text-4xl font-semibold mb-6">Seja Bem-Vindo!!</h2>
-            <div class="flex justify-center md:justify-between mb-4">
-                <button class="border border-gray-400 text-gray-600 w-32 md:w-60 p-2 rounded-xl flex items-center text-lg justify-center mr-2 hover:bg-gray-300">
-                    <img src="{{ asset('images/google-logo.png') }}" alt="Google" class="h-9  mr-2">
-
-                </button>
-                <button class="border border-gray-400 text-gray-600 w-32 md:w-60 p-2 rounded-xl flex items-center text-lg justify-center mr-2 hover:bg-gray-300">
-                    <img src="{{ asset('images/apple-logo.png') }}" alt="Apple" class="h-7 mb-1 mr-2">
-
-                </button>
-            </div>
-            <div class="flex items-center mb-4">
-                <hr class="flex-grow border-gray-400">
-                <span class="mx-2 -translate-y-0.5">ou</span>
-                <hr class="flex-grow border-gray-400">
-            </div>
-            <form action="/login" method="POST">
-                @csrf
-                <div class="mb-4">
-                    <label for="email" class="block text-gray-700">Email</label>
-                    <input type="email" id="email" name="email" class="w-full p-2 rounded-xl border-customDarkBlue border-2 h-12 focus:outline-none ">
-                </div>
-                <div class="mb-4">
-                    <label for="password" class="block text-gray-700">Senha</label>
-                    <input type="password" id="password" name="password" class="w-full p-2 border-2 border-customDarkBlue rounded-xl h-12 focus:outline-none ">
-                </div>
-                <div class="flex justify-between items-center mt-6 mb-4">
-                    <label class="flex items-center">
-                        <input type="checkbox" name="remember" class="mr-2"> Lembre-se de mim
-                    </label>
-                </div>
-                <button type="submit" class="w-full bg-customDarkBlue text-white p-2 rounded-xl text-lg font-itim hover:bg-blue-800">Registrar-se</button>
-            </form>
-            <div class="text-start mt-6">
-                Já tem conta? <a href="{{ url('/signin') }}" class="font-bold">Clique aqui</a>
+                <a href="/ong/signup">
+                    <div class="rounded-lg pl-2 py-4 shadow-lg hover:bg-gray-100 hover:shadow-2xl">
+                        ONG
+                    </div>
+                </a>
+                <a href="/prof/signup">
+                    <div class="rounded-lg pl-2 py-4 shadow-lg hover:bg-gray-100 hover:shadow-2xl">
+                        Professor
+                    </div>
+                </a>
             </div>
         </div>
         <img src="{{ asset('images/signInBack.png') }}" alt="Background" class="absolute inset-0 w-full h-full object-cover z-0">
