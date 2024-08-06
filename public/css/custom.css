@@ -62,13 +62,26 @@
         border-bottom-right-radius: 2.1rem;
         border-top-right-radius: 10.1rem;
     }
+    /*ONGS*/
+    .text-7xl {
+        font-size: 10rem;
+        line-height: 0.1;
+    }
+    .text-8xl {
+        font-size: 14rem;
+        line-height: 0.1;
+    }
+    .w-26{
+        width: 6.5rem;
+    }
+    .border-4{
+        border-width: 4px;
+    }
+    .rounded-4xl{
+        border-radius: 0.95rem
+    }
 }
 
-.marquee {
-    display: flex;
-    overflow: hidden;
-    animation: marquee 20s linear infinite;
-}
 @keyframes marquee {
     0% {
         transform: translateX(100%);
@@ -77,3 +90,4 @@
         transform: translateX(-100%);
     }
 }
+

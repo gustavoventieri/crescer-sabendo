@@ -13,6 +13,9 @@ export default {
                 customGreen: "#6CDD7E",
                 customDarkBlue: "#5656BF",
                 customRed: "#E15C5C",
+                customYellow: '#ECCA65',
+                customGreen2: '#99e4a5',
+                customBrown: '#e6dac6',
             },
             borderRadius: {
                 "br-only": "0 0 0.21rem 0", // Defina o valor conforme necessário
@@ -32,4 +35,5 @@ export default {
             addUtilities(newUtilities, ["responsive", "hover"]);
         },
     ],
+
 };

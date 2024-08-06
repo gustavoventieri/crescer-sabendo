@@ -354,3 +354,45 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("mobile-menu").classList.toggle("hidden");
         });
 });
+
+
+/*---------------------------------------Modal-----------------------------------------------*/
+// Selecione o botão que abre o modal
+function iniciarJavaScript() {
+    const botaoAbrirModal = document.querySelector('[data-modal-toggle="authentication-modal"]');
+
+    // Selecione o modal
+    const modal = document.getElementById('authentication-modal');
+
+    // Adicione um evento de clique no botão
+    botaoAbrirModal.addEventListener('click', () => {
+        // Remova a classe hidden do modal
+        modal.classList.remove('hidden');
+    });
+    // Selecione o botão de fechar do modal
+    const botaoFecharModal = document.querySelector('[data-modal-hide="authentication-modal"]');
+
+    // Adicione um evento de clique no botão de fechar
+    botaoFecharModal.addEventListener('click', () => {
+        // Volte a aplicar a classe hidden do modal
+        modal.classList.add('hidden');
+    });
+}
+function iniciarJavaScript() {
+    // Selecione o modal
+    const modal = document.getElementById('authentication-modal');
+
+    // Remova a classe hidden do modal
+    modal.classList.remove('hidden');
+    const botaoFecharModal = document.querySelector('[data-modal-hide="authentication-modal"]');
+
+    // Adicione um evento de clique no botão de fechar
+    botaoFecharModal.addEventListener('click', () => {
+        // Selecione o modal
+        const modal = document.getElementById('authentication-modal');
+    
+        // Volte a aplicar a classe hidden do modal
+        modal.classList.add('hidden');
+    });
+}
+// Selecione o botão de fechar do modal

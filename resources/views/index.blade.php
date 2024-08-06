@@ -23,7 +23,7 @@
             <nav id="navbar" class="hidden  md:flex items-center space-x-12 gap-14">
                 <a href="#" class="text-purple-700  text-2xl font-itim hover:text-purple-900 hover:underline hover:pb-3 ">Home</a>
                 <a href="#aboutus" class="text-customBlue text-2xl font-itim hover:text-purple-900 hover:underline hover:pb-3" >Sobre nós</a>
-                <a href="#sponsors" class="text-customBlue text-2xl font-itim hover:text-purple-900 hover:underline hover:pb-3">ONG's</a>
+                <a href="{{ url('/ongs')}}#sponsors" class="text-customBlue text-2xl font-itim hover:text-purple-900 hover:underline hover:pb-3">ONG's</a>
                 <a href="{{ url('/donates')}}#doacao" class="text-customBlue text-2xl font-itim hover:text-purple-900 hover:underline hover:pb-3">Doações</a>
                 <a href="#contactus" class="text-customBlue text-2xl font-itim hover:text-purple-900 hover:underline hover:pb-3">Fale Conosco</a>
             </nav>
@@ -46,7 +46,7 @@
         <div id="mobile-menu" class="hidden bg-white  py-2 px-4 ">
             <a href="#" class="text-purple-700 text-lg font-itim py-2  hover:text-purple-900">Home</a>
             <a href="#aboutus" class="block text-customBlue text-lg font-itim py-2  hover:text-purple-900">Sobre nós</a>
-            <a href="#sponsors" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">ONG's</a>
+            <a href="{{ url('/ongs')}}#sponsors" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">ONG's</a>
             <a href="{{ url('/donates')}}#doacao" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">Doações</a>
             <a href="#contactus" class="block text-customBlue text-lg font-itim py-2 hover:text-purple-900">Fale Conosco</a>
             <a href="{{ url('/signin') }}" class="block  text-customBlue text-lg font-itim py-2 hover:text-purple-900">Entrar</a>
@@ -63,7 +63,7 @@
 
         <!-- Overlay Div -->
         <div id="overlay" class="mr-3 absolute md:left-36 md:top-32 flex items-center justify-center p-4">
-            <div  id="divContent" class="bg-white  rounded-3xl shadow-2xl p-14 max-w-lg text-center">
+        <div  id="divContent" class="bg-white  rounded-3xl shadow-2xl p-14 max-w-lg text-center">
                 <h1 class="text-purple-700 text-3xl font-itim mb-4">Onde os sonhos ganham vida!</h1>
                 <p class="text-gray-700 text-xl font-itim">Apoiamos ONGs dedicadas a oferecer atividades extracurriculares que estimulam a criatividade e promovem o conhecimento.</p>
             </div>
