@@ -27,6 +27,8 @@ Route::get('/signup', function () {
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
 
+
+
 // Ong
 Route::get('/ong/signup', function () {
     return view('user/ong/signUp');

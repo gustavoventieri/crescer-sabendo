@@ -20,7 +20,7 @@ return new class extends Migration
             $table->unsignedInteger('id_professor')->nullable();
             $table->binary('foto')->nullable();
             $table->text('itens_aula')->nullable();
-            $table->foreign('id_professor')->references('id_professor')->on('professors');
+            $table->foreign('id_professor')->references('id_professor')->on('professores');
             $table->timestamps();
         });
     }

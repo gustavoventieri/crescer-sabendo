@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Professor;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Hash;
 
 class ProfessorController
 {
@@ -26,7 +27,7 @@ class ProfessorController
         $professor->Telefone = $req->input('Telefone');
         $professor->Formacao = $req->input('Formacao');
         $professor->Email = $req->input('Email');
-        $professor->Senha = $req->input('Senha');
+        $professor->Senha = Hash::make($req->input('Senha'));
 
         if ($c_senha !== $senha) return redirect()->back()->withInput()->withErrors(['senha' => 'senhas não coincidem']);
 
