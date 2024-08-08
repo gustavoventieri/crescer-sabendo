@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Professor;
 use Illuminate\Http\Request;
-use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Session;
 
 class ProfessorController
 {
@@ -32,6 +32,7 @@ class ProfessorController
 
 
         $professor->save();
+        Session::put('professor', $professor);
         return redirect('/ong/account');
     }
 }

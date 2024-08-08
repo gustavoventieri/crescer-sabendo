@@ -6,6 +6,7 @@ use App\Http\Controllers\OngController;
 use App\Http\Controllers\AlunoController;
 use App\Http\Controllers\LoginController;
 
+
 // Paginas padrão
 Route::get('/', function () {
     return view('user/index');

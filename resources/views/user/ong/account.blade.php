@@ -49,6 +49,9 @@
             <a href="/" class="block text-customBlue text-lg font-itim py-2 hover:text-customRed">Matriculas</a>
         </div>
     </header>
+    @php
+    $professor = Session::get('professor');
+    @endphp
 
     <div class="h-full bg-gray-100 p-8">
         <div class="bg-white rounded-lg shadow-xl pb-8">
@@ -90,10 +93,11 @@
             <div class="flex flex-col ml-20 -mt-20">
                 <img src="https://vojislavd.com/ta-template-demo/assets/img/profile.jpg" class="w-40 border-4 border-white rounded-full">
                 <div class="flex items-start space-x-2 mt-2">
-                    <p class="text-2xl">Nome Ong</p>
+                    <p class="text-2xl">{{$professor->Nome}}</p>
                 </div>
-                <p class="text-xl">Emailpadrao@gmail.com</p>
-                <p class=" text-xl">11 912345-6789</p>
+
+                <p class="text-xl">{{$professor->Email}}</p>
+                <p class=" text-xl">{{$professor->Telefone}}</p>
             </div>
         </div>
 </body>
