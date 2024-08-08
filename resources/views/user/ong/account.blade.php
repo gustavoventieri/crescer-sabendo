@@ -71,15 +71,16 @@
                     </div>
                     <div class="py-2">
                         <p class="text-gray-400 text-xs px-6 uppercase mb-1">Conta</p>
-                        <button class="w-full flex items-center py-1.5 px-6 space-x-2 hover:bg-gray-200">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M13 5l7 7l-7 7" />
-                                <path d="M5 12h14" />
-                            </svg>
-                            <span class="text-sm text-gray-700">Sair</span>
-                        </button>
-
+                        <a href="{{ route('logout') }}">
+                            <button class="w-full flex items-center py-1.5 px-6 space-x-2 hover:bg-gray-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M13 5l7 7l-7 7" />
+                                    <path d="M5 12h14" />
+                                </svg>
+                                <span class="text-sm text-gray-700">Sair</span>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -90,7 +91,6 @@
                 <img src="https://vojislavd.com/ta-template-demo/assets/img/profile.jpg" class="w-40 border-4 border-white rounded-full">
                 <div class="flex items-start space-x-2 mt-2">
                     <p class="text-2xl">Nome Ong</p>
-
                 </div>
                 <p class="text-xl">Emailpadrao@gmail.com</p>
                 <p class=" text-xl">11 912345-6789</p>

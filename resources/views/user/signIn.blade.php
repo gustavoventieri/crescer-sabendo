@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrar-se</title>
+    <title>Entrar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
@@ -49,12 +49,12 @@
             <form action="/login" method="POST">
                 @csrf
                 <div class="mb-4">
-                    <label for="email" class="block text-gray-700">Email</label>
-                    <input type="email" id="email" name="email" class="w-full p-2 rounded-xl border-customDarkBlue border-2 h-12 focus:outline-none ">
+                    <label for="Email" class="block text-gray-700">Email</label>
+                    <input type="email" required="Email" name="Email" class="w-full p-2 rounded-xl border-customDarkBlue border-2 h-12 focus:outline-none ">
                 </div>
                 <div class="mb-4">
-                    <label for="password" class="block text-gray-700">Senha</label>
-                    <input type="password" id="password" name="password" class="w-full p-2 border-2 border-customDarkBlue rounded-xl h-12 focus:outline-none ">
+                    <label for="Senha" class="block text-gray-700">Senha</label>
+                    <input type="password" required id="Senha" name="Senha" class="w-full p-2 border-2 border-customDarkBlue rounded-xl h-12 focus:outline-none ">
                 </div>
                 <div class="flex justify-between items-center mt-6 mb-4">
                     <label class="flex items-center">
@@ -68,6 +68,15 @@
             <div class="text-start mt-6">
                 Não tem conta? <a href="{{ url('/signup') }}" class="font-bold">Cadastre-se</a>
             </div>
+            @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+            @endif
         </div>
         <img src="{{ asset('images/signInBack.png') }}" alt="Background" class="absolute inset-0 w-full h-full object-cover z-0">
     </div>

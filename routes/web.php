@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ProfessorController;
+use App\Http\Controllers\OngController;
+use App\Http\Controllers\AlunoController;
+use App\Http\Controllers\LoginController;
 
 // Paginas padrão
 Route::get('/', function () {
@@ -12,13 +15,15 @@ Route::get('/donates', function () {
 });
 
 
-// Registro e Login
+// Registro, Login e Logout
 Route::get('/signin', function () {
     return view('user/signIn');
 });
+Route::post('/login', [LoginController::class, 'login']);
 Route::get('/signup', function () {
     return view('user/signUp');
 });
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
 
 // Ong
@@ -49,6 +54,7 @@ Route::get('/aluno/signup', function () {
 Route::get('/prof/signup', function () {
     return view('user/prof/signUp');
 });
+Route::post('/createp', [ProfessorController::class, 'create']);
 
 // Admin
 Route::get('/admin', function () {

@@ -59,7 +59,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Comentarios -->
         <div class="flex justify-center mt-4">
             <div class="w-full max-w-5xl rounded-xl bg-gray-100 border-2 border-gray-400 py-6 px-4 sm:px-10">
